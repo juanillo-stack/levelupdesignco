@@ -88,6 +88,28 @@ export const Route = createFileRoute("/trabajos")({
 });
 
 function TrabajosPage() {
+  const [images, setImages] = useState<(string | null)[]>(() => Array(6).fill(null));
+
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed) && parsed.length === 6) setImages(parsed);
+      }
+    } catch {}
+  }, []);
+
+  const updateImage = (i: number, val: string | null) => {
+    setImages((prev) => {
+      const next = [...prev];
+      next[i] = val;
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      } catch {}
+      return next;
+    });
+  };
   return (
     <div className="min-h-screen bg-background">
       <Header />
