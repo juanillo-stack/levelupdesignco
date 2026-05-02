@@ -28,7 +28,7 @@ function TrabajosPage() {
           </Link>
           <div className="mt-6">
             <div className="text-xs font-semibold uppercase tracking-wider text-brand">Nuestros clientes</div>
-            <h1 className="mt-2 font-serif text-4xl md:text-5xl text-ink">Trabajos destacados</h1>
+            <h1 className="mt-2 font-serif text-4xl md:text-5xl text-ink">Proyectos destacados</h1>
             <p className="mt-3 text-ink-soft max-w-2xl">Proyectos reales en los que he diseñado, desarrollado y optimizado la presencia digital completa.</p>
           </div>
 

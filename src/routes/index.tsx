@@ -152,10 +152,10 @@ function HowIWork() {
           </div>
           <Link
             to="/trabajos"
-            className="inline-flex items-center gap-2 text-sm font-medium text-ink hover:text-brand border-b border-border hover:border-brand pb-0.5 transition-colors"
+            className="group inline-flex items-center gap-2 text-base font-medium text-brand border-b-2 border-brand/40 hover:border-brand pb-1 px-1 transition-all hover:gap-3"
           >
-            Ver nuestros trabajos
-            <ArrowUpRight className="h-4 w-4" />
+            Ver nuestros proyectos
+            <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>
 
