@@ -139,16 +139,11 @@ function TrabajosPage() {
             </div>
             <div className="p-6 md:p-8">
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="aspect-[4/3] rounded-lg bg-gradient-to-br from-brand-soft to-muted border border-border flex items-center justify-center text-ink-soft text-xs"
-                  >
-                    Imagen {i + 1}
-                  </div>
+                {images.map((img, i) => (
+                  <ImageUploader key={i} index={i} image={img} onChange={(val) => updateImage(i, val)} />
                 ))}
               </div>
-              <p className="mt-4 text-xs text-ink-soft">Galería pendiente — sube las imágenes del proyecto y las integraré aquí.</p>
+              <p className="mt-4 text-xs text-ink-soft">Haz click en cada recuadro para subir o reemplazar la imagen. Se guardan automáticamente en este navegador.</p>
             </div>
           </article>
 
