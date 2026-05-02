@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { MessageCircle, ArrowRight, Globe, Share2, MapPin, Bot, Search, PenTool, Code2, Gauge, ArrowUpRight, AtSign } from "lucide-react";
+import { MessageCircle, ArrowRight, Globe, Share2, MapPin, Bot, Search, PenTool, Code2, Gauge, ArrowUpRight, AtSign, Palette } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import heroImg from "@/assets/hero-workspace.jpg";
@@ -150,35 +150,51 @@ function Services() {
         ))}
       </div>
 
-      {/* Redes sociales: bloque vertical */}
-      <div className="mt-3 p-4 rounded-lg border border-border bg-background">
-        <div className="flex items-center gap-2">
-          <div className="h-7 w-7 rounded-md bg-brand-soft text-brand flex items-center justify-center">
-            <Share2 className="h-3.5 w-3.5" />
+      {/* Redes sociales + Diseño web personalizado */}
+      <div className="mt-2 grid md:grid-cols-2 gap-2">
+        {/* Redes sociales: bloque vertical */}
+        <div className="p-3 rounded-lg border border-border bg-background hover:border-brand/40 hover:shadow-[0_8px_20px_-12px_rgba(123,30,43,0.25)] transition-all">
+          <div className="flex items-center gap-2">
+            <div className="h-7 w-7 rounded-md bg-brand-soft text-brand flex items-center justify-center">
+              <Share2 className="h-3.5 w-3.5" />
+            </div>
+            <h3 className="font-serif text-[15px] text-ink leading-tight">Redes sociales</h3>
           </div>
-          <h3 className="font-serif text-[15px] text-ink leading-tight">Redes sociales</h3>
+          <p className="mt-1 text-xs text-ink-soft leading-snug">Perfiles cuidados y coherentes en:</p>
+          <ul className="mt-2 flex flex-col gap-1.5 text-sm text-ink">
+            <li className="flex items-center gap-2">
+              <span className="h-6 w-6 rounded-md bg-brand-soft text-brand flex items-center justify-center">
+                <LinkedInIcon />
+              </span>
+              LinkedIn
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="h-6 w-6 rounded-md bg-brand-soft text-brand flex items-center justify-center">
+                <InstagramIcon />
+              </span>
+              Instagram
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="h-6 w-6 rounded-md bg-brand-soft text-brand flex items-center justify-center">
+                <FacebookIcon />
+              </span>
+              Facebook
+            </li>
+          </ul>
         </div>
-        <p className="mt-1 text-xs text-ink-soft leading-snug">Perfiles cuidados y coherentes en:</p>
-        <ul className="mt-2.5 flex flex-col gap-1.5 text-sm text-ink">
-          <li className="flex items-center gap-2">
-            <span className="h-6 w-6 rounded-md bg-brand-soft text-brand flex items-center justify-center">
-              <LinkedInIcon />
-            </span>
-            LinkedIn
-          </li>
-          <li className="flex items-center gap-2">
-            <span className="h-6 w-6 rounded-md bg-brand-soft text-brand flex items-center justify-center">
-              <InstagramIcon />
-            </span>
-            Instagram
-          </li>
-          <li className="flex items-center gap-2">
-            <span className="h-6 w-6 rounded-md bg-brand-soft text-brand flex items-center justify-center">
-              <FacebookIcon />
-            </span>
-            Facebook
-          </li>
-        </ul>
+
+        {/* Diseño web personalizado + logo */}
+        <div className="p-3 rounded-lg border border-border bg-background hover:border-brand/40 hover:shadow-[0_8px_20px_-12px_rgba(123,30,43,0.25)] transition-all">
+          <div className="flex items-center gap-2">
+            <div className="h-7 w-7 rounded-md bg-brand-soft text-brand flex items-center justify-center">
+              <Palette className="h-3.5 w-3.5" />
+            </div>
+            <h3 className="font-serif text-[15px] text-ink leading-tight">Diseño web personalizado + logo de empresa</h3>
+          </div>
+          <p className="mt-1.5 text-xs text-ink-soft leading-snug">
+            Diseño web a medida junto con creación de identidad visual y logo profesional para tu negocio.
+          </p>
+        </div>
       </div>
     </section>
   );
