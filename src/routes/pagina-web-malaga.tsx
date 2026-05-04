@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MessageCircle, AlertTriangle, CheckCircle2, Smartphone, Layout, MousePointerClick, Sparkles, ShieldCheck, Users } from "lucide-react";
+import { MessageCircle, AlertTriangle, CheckCircle2, Smartphone, Layout, MousePointerClick, Sparkles, ShieldCheck, Users, ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -127,7 +128,26 @@ function Page() {
           </div>
         </section>
 
-        {/* CTA final */}
+        {/* Enlace interno + relacionado */}
+        <section className="mx-auto max-w-4xl px-5 py-8">
+          <p className="text-ink-soft leading-relaxed">
+            Una web bien hecha es solo el primer paso. Si lo que buscas es un sistema completo para{" "}
+            <Link to="/conseguir-clientes-malaga" className="text-brand underline underline-offset-2 hover:no-underline">
+              conseguir más clientes en Málaga
+            </Link>
+            , combinamos web y WhatsApp para que el teléfono empiece a sonar.
+          </p>
+          <div className="mt-5">
+            <Link to="/conseguir-clientes-malaga" className="group inline-flex items-center gap-2 p-4 rounded-lg border border-border bg-background hover:border-brand/40 transition-all">
+              <div>
+                <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand">Siguiente paso</div>
+                <div className="font-serif text-lg text-ink">Conseguir clientes en Málaga</div>
+              </div>
+              <ArrowRight className="h-4 w-4 text-brand transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
+        </section>
+
         <section className="mx-auto max-w-4xl px-5 py-12">
           <div className="rounded-2xl border border-border bg-gradient-to-br from-brand-soft to-background p-7 md:p-9 text-center">
             <h2 className="font-serif text-2xl md:text-[1.85rem] text-ink max-w-2xl mx-auto leading-tight">

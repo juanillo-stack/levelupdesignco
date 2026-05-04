@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MessageCircle, AlertTriangle, CheckCircle2, TrendingUp, Clock, Users, Search, Wrench, Phone } from "lucide-react";
+import { MessageCircle, AlertTriangle, CheckCircle2, TrendingUp, Clock, Users, Search, Wrench, Phone, ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -152,6 +153,33 @@ function Page() {
             No vendemos humo ni promesas imposibles. Trabajamos con negocios locales y autónomos que necesitan algo concreto:
             que el teléfono suene y que entren contactos. Nos enfocamos en resultados prácticos, no en métricas que no significan nada.
           </p>
+          <p className="mt-3 text-ink-soft leading-relaxed">
+            Para que el sistema funcione bien, normalmente combinamos esto con una{" "}
+            <Link to="/pagina-web-malaga" className="text-brand underline underline-offset-2 hover:no-underline">
+              página web profesional pensada para convertir
+            </Link>
+            . Si quieres ver primero qué funciona y qué no, échale un vistazo a la{" "}
+            <Link to="/como-conseguir-clientes-negocio" className="text-brand underline underline-offset-2 hover:no-underline">
+              guía sobre cómo conseguir clientes
+            </Link>
+            .
+          </p>
+        </section>
+
+        {/* Enlaces relacionados */}
+        <section className="mx-auto max-w-4xl px-5 pb-4">
+          <div className="grid sm:grid-cols-2 gap-3">
+            <Link to="/pagina-web-malaga" className="group p-4 rounded-lg border border-border bg-background hover:border-brand/40 transition-all">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand">Servicio</div>
+              <div className="mt-1 font-serif text-lg text-ink flex items-center justify-between">Página web profesional <ArrowRight className="h-4 w-4 text-brand transition-transform group-hover:translate-x-1" /></div>
+              <p className="mt-1 text-sm text-ink-soft">Webs simples y rápidas pensadas para convertir visitas en clientes.</p>
+            </Link>
+            <Link to="/como-conseguir-clientes-negocio" className="group p-4 rounded-lg border border-border bg-background hover:border-brand/40 transition-all">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand">Guía</div>
+              <div className="mt-1 font-serif text-lg text-ink flex items-center justify-between">Cómo conseguir clientes <ArrowRight className="h-4 w-4 text-brand transition-transform group-hover:translate-x-1" /></div>
+              <p className="mt-1 text-sm text-ink-soft">Lo que realmente funciona hoy para atraer clientes a tu negocio.</p>
+            </Link>
+          </div>
         </section>
 
         {/* CTA final */}

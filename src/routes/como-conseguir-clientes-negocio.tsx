@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MessageCircle, Globe, Smartphone, CheckCircle2, Lightbulb } from "lucide-react";
+import { MessageCircle, Globe, Smartphone, CheckCircle2, Lightbulb, ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -101,6 +102,13 @@ function Page() {
               <li>Un botón de contacto visible en cada sección</li>
               <li>Carga rápida y buena en el móvil</li>
             </ul>
+            <p>
+              Si quieres profundizar en esto, mira cómo enfocamos una{" "}
+              <Link to="/pagina-web-malaga" className="text-brand underline underline-offset-2 hover:no-underline">
+                página web profesional pensada para captar clientes
+              </Link>
+              .
+            </p>
           </Section>
 
           <Section title="Usar WhatsApp como canal directo de ventas" icon={Smartphone}>
@@ -110,7 +118,11 @@ function Page() {
             </p>
             <p>
               Pon un botón de WhatsApp visible en tu web, en tu Instagram y en tu ficha de Google. Vas a notar la diferencia
-              en cuestión de días.
+              en cuestión de días. Si necesitas un sistema completo, así es como ayudamos a{" "}
+              <Link to="/conseguir-clientes-malaga" className="text-brand underline underline-offset-2 hover:no-underline">
+                conseguir clientes en Málaga con web + WhatsApp
+              </Link>
+              .
             </p>
           </Section>
 
@@ -124,6 +136,22 @@ function Page() {
             </ul>
           </Section>
         </article>
+
+        {/* Enlaces relacionados */}
+        <section className="mx-auto max-w-3xl px-5 py-6">
+          <div className="grid sm:grid-cols-2 gap-3">
+            <Link to="/conseguir-clientes-malaga" className="group p-4 rounded-lg border border-border bg-background hover:border-brand/40 transition-all">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand">Servicio</div>
+              <div className="mt-1 font-serif text-lg text-ink flex items-center justify-between">Conseguir clientes en Málaga <ArrowRight className="h-4 w-4 text-brand transition-transform group-hover:translate-x-1" /></div>
+              <p className="mt-1 text-sm text-ink-soft">Sistema simple con web + WhatsApp para generar contactos reales.</p>
+            </Link>
+            <Link to="/pagina-web-malaga" className="group p-4 rounded-lg border border-border bg-background hover:border-brand/40 transition-all">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand">Servicio</div>
+              <div className="mt-1 font-serif text-lg text-ink flex items-center justify-between">Página web profesional <ArrowRight className="h-4 w-4 text-brand transition-transform group-hover:translate-x-1" /></div>
+              <p className="mt-1 text-sm text-ink-soft">Webs simples y rápidas pensadas para convertir visitas en clientes.</p>
+            </Link>
+          </div>
+        </section>
 
         {/* Cierre */}
         <section className="mx-auto max-w-4xl px-5 py-12">
