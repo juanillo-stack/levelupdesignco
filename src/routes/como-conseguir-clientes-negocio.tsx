@@ -137,6 +137,22 @@ function Page() {
           </Section>
         </article>
 
+        {/* Enlaces relacionados */}
+        <section className="mx-auto max-w-3xl px-5 py-6">
+          <div className="grid sm:grid-cols-2 gap-3">
+            <Link to="/conseguir-clientes-malaga" className="group p-4 rounded-lg border border-border bg-background hover:border-brand/40 transition-all">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand">Servicio</div>
+              <div className="mt-1 font-serif text-lg text-ink flex items-center justify-between">Conseguir clientes en Málaga <ArrowRight className="h-4 w-4 text-brand transition-transform group-hover:translate-x-1" /></div>
+              <p className="mt-1 text-sm text-ink-soft">Sistema simple con web + WhatsApp para generar contactos reales.</p>
+            </Link>
+            <Link to="/pagina-web-malaga" className="group p-4 rounded-lg border border-border bg-background hover:border-brand/40 transition-all">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand">Servicio</div>
+              <div className="mt-1 font-serif text-lg text-ink flex items-center justify-between">Página web profesional <ArrowRight className="h-4 w-4 text-brand transition-transform group-hover:translate-x-1" /></div>
+              <p className="mt-1 text-sm text-ink-soft">Webs simples y rápidas pensadas para convertir visitas en clientes.</p>
+            </Link>
+          </div>
+        </section>
+
         {/* Cierre */}
         <section className="mx-auto max-w-4xl px-5 py-12">
           <div className="rounded-2xl border border-border bg-gradient-to-br from-brand-soft to-background p-7 md:p-9 text-center">
