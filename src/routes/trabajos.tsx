@@ -11,14 +11,6 @@ import judith6 from "@/assets/judith-6.jpg";
 
 const WHATSAPP = "https://wa.me/34606899991";
 
-const GALLERY = [
-  { src: judith1, alt: "Cesta de regalo con flores y productos gourmet" },
-  { src: judith2, alt: "Mesa decorada para evento con centro floral" },
-  { src: judith3, alt: "Cesta de boda con champán y rosas blancas" },
-  { src: judith4, alt: "Cesta navideña con vinos y productos selectos" },
-  { src: judith5, alt: "Decoración de cumpleaños con globos y tarta" },
-  { src: judith6, alt: "Cesta corporativa con productos artesanos" },
-];
 
 export const Route = createFileRoute("/trabajos")({
   head: () => ({
@@ -62,18 +54,24 @@ function TrabajosPage() {
             </div>
             <div className="p-6 md:p-8">
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {GALLERY.map((img, i) => (
-                  <div key={i} className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
-                    <img
-                      src={img.src}
-                      alt={img.alt}
-                      width={1024}
-                      height={768}
-                      loading="lazy"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                ))}
+                <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
+                  <img src={judith1} alt="Proyecto 1" width={1024} height={768} loading="lazy" className="w-full h-full object-cover" />
+                </div>
+                <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
+                  <img src={judith2} alt="Proyecto 2" width={1024} height={768} loading="lazy" className="w-full h-full object-cover" />
+                </div>
+                <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
+                  <img src={judith3} alt="Proyecto 3" width={1024} height={768} loading="lazy" className="w-full h-full object-cover" />
+                </div>
+                <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
+                  <img src={judith4} alt="Proyecto 4" width={1024} height={768} loading="lazy" className="w-full h-full object-cover" />
+                </div>
+                <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
+                  <img src={judith5} alt="Proyecto 5" width={1024} height={768} loading="lazy" className="w-full h-full object-cover" />
+                </div>
+                <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
+                  <img src={judith6} alt="Proyecto 6" width={1024} height={768} loading="lazy" className="w-full h-full object-cover" />
+                </div>
               </div>
             </div>
           </article>
