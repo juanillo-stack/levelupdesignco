@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MessageCircle, Globe, Smartphone, CheckCircle2, Lightbulb } from "lucide-react";
+import { MessageCircle, Globe, Smartphone, CheckCircle2, Lightbulb, ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
