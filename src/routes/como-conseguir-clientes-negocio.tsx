@@ -102,6 +102,13 @@ function Page() {
               <li>Un botón de contacto visible en cada sección</li>
               <li>Carga rápida y buena en el móvil</li>
             </ul>
+            <p>
+              Si quieres profundizar en esto, mira cómo enfocamos una{" "}
+              <Link to="/pagina-web-malaga" className="text-brand underline underline-offset-2 hover:no-underline">
+                página web profesional pensada para captar clientes
+              </Link>
+              .
+            </p>
           </Section>
 
           <Section title="Usar WhatsApp como canal directo de ventas" icon={Smartphone}>
