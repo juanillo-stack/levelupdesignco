@@ -24,6 +24,7 @@ function Index() {
       <Header />
       <main className="pt-16">
         <Hero />
+        <HowWeHelp />
         <ProblemSolution />
         <Services />
         <HowIWork />
