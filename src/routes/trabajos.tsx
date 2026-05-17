@@ -2,22 +2,15 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft, MessageCircle } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import judith1 from "@/assets/judith-1.jpg";
-import judith2 from "@/assets/judith-2.jpg";
-import judith3 from "@/assets/judith-3.jpg";
-import judith4 from "@/assets/judith-4.jpg";
-import judith5 from "@/assets/judith-5.jpg";
-import judith6 from "@/assets/judith-6.jpg";
-
 const WHATSAPP = "https://wa.me/34606899991";
 
 
 export const Route = createFileRoute("/trabajos")({
   head: () => ({
     meta: [
-      { title: "Nuestros trabajos — LevelUp Digital" },
+      { title: "Nuestros trabajos — LevelUp Design Co." },
       { name: "description", content: "Casos reales: identidad visual, web profesional y optimización digital. Cestas & Eventos Judith en Málaga." },
-      { property: "og:title", content: "Nuestros trabajos — LevelUp Digital" },
+      { property: "og:title", content: "Nuestros trabajos — LevelUp Design Co." },
       { property: "og:description", content: "Casos reales de identidad, web y presencia digital." },
     ],
   }),
