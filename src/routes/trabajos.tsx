@@ -18,6 +18,32 @@ export const Route = createFileRoute("/trabajos")({
 });
 
 function TrabajosPage() {
+  const highlights = [
+    {
+      title: "Identidad visual clara",
+      description: "Marca definida para conectar con clientes reales.",
+    },
+    {
+      title: "Web profesional",
+      description: "Diseño pensado para convertir visitas en mensajes.",
+    },
+    {
+      title: "Google Business optimizado",
+      description: "Apareces en búsquedas locales cuando más importa.",
+    },
+    {
+      title: "WhatsApp directo",
+      description: "Sistema listo para que hablen contigo desde el primer clic.",
+    },
+    {
+      title: "Procesos simples",
+      description: "Entrega rápida con comunicación clara en cada paso.",
+    },
+    {
+      title: "Foco en resultados",
+      description: "Cada proyecto se orienta a más contactos y mejores conversiones.",
+    },
+  ];
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -46,25 +72,13 @@ function TrabajosPage() {
               </div>
             </div>
             <div className="p-6 md:p-8">
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
-                  <img src={judith1} alt="Proyecto 1" width={1024} height={768} loading="lazy" className="w-full h-full object-cover" />
-                </div>
-                <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
-                  <img src={judith2} alt="Proyecto 2" width={1024} height={768} loading="lazy" className="w-full h-full object-cover" />
-                </div>
-                <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
-                  <img src={judith3} alt="Proyecto 3" width={1024} height={768} loading="lazy" className="w-full h-full object-cover" />
-                </div>
-                <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
-                  <img src={judith4} alt="Proyecto 4" width={1024} height={768} loading="lazy" className="w-full h-full object-cover" />
-                </div>
-                <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
-                  <img src={judith5} alt="Proyecto 5" width={1024} height={768} loading="lazy" className="w-full h-full object-cover" />
-                </div>
-                <div className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted">
-                  <img src={judith6} alt="Proyecto 6" width={1024} height={768} loading="lazy" className="w-full h-full object-cover" />
-                </div>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {highlights.map((item) => (
+                  <div key={item.title} className="rounded-3xl border border-border bg-brand-soft/70 p-5">
+                    <h3 className="font-serif text-lg text-ink font-semibold">{item.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-ink-soft">{item.description}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </article>

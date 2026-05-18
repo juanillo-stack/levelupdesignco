@@ -37,18 +37,15 @@ export function HowIWork() {
   ];
 
   return (
-    <section
-      id="como-trabajo"
-      className="border-y border-border bg-brand-soft/20"
-    >
-      <div className="mx-auto max-w-3xl px-5 py-9">
+    <section id="como-trabajo" className="relative overflow-hidden bg-transparent">
+      <div className="relative z-10 mx-auto max-w-3xl px-5 py-14">
         <div className="flex items-end justify-between flex-wrap gap-3 mb-5">
           <div>
             <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand">
               Método
             </div>
 
-            <h2 className="mt-1.5 font-serif text-2xl md:text-3xl text-ink">
+            <h2 className="mt-1.5 font-serif text-2xl md:text-3xl text-white">
               Cómo trabajo
             </h2>
           </div>
@@ -63,16 +60,11 @@ export function HowIWork() {
           </Link>
         </div>
 
-        <ol className="relative">
-          <div
-            aria-hidden
-            className="absolute left-[15px] top-2 bottom-2 w-px bg-border"
-          />
-
+        <ol className="relative space-y-8">
           {steps.map(({ n, icon: Icon, title, desc }) => (
             <li key={n} className="relative pl-12 pb-4 last:pb-0">
-              <div className="absolute left-0 top-0 h-8 w-8 rounded-full bg-background border border-brand/30 flex items-center justify-center shadow-sm">
-                <Icon className="h-4 w-4 text-brand" />
+              <div className="absolute left-0 top-0 h-8 w-8 rounded-full bg-brand/15 text-brand flex items-center justify-center shadow-sm shadow-black/20">
+                <Icon className="h-4 w-4" />
               </div>
 
               <div className="flex items-baseline gap-3">
@@ -80,10 +72,10 @@ export function HowIWork() {
                   {n}
                 </span>
 
-                <h3 className="font-serif text-lg text-ink">{title}</h3>
+                <h3 className="font-serif text-lg text-white">{title}</h3>
               </div>
 
-              <p className="mt-0.5 text-sm text-ink-soft">{desc}</p>
+              <p className="mt-0.5 text-sm text-white/70">{desc}</p>
             </li>
           ))}
         </ol>
