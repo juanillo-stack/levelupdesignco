@@ -1,30 +1,30 @@
-import { Globe, MapPin, Mail, Share2, LayoutDashboard } from "lucide-react";
+import { ShieldCheck, LayoutGrid, TrendingUp, Zap, BadgeCheck } from "lucide-react";
 
-const services = [
+const results = [
   {
-    icon: Globe,
-    title: "Página web profesional",
-    desc: "Diseño moderno orientado a captar clientes.",
+    icon: ShieldCheck,
+    title: "Más confianza visual",
+    desc: "Una imagen profesional que genera credibilidad desde el primer vistazo.",
   },
   {
-    icon: MapPin,
-    title: "Google Business + WhatsApp automatizado",
-    desc: "Más visibilidad local y atención automática para clientes.",
+    icon: LayoutGrid,
+    title: "Mejor organización",
+    desc: "Herramientas adaptadas para gestionar clientes, tareas y presupuestos con orden.",
   },
   {
-    icon: Mail,
-    title: "Dominio y correo corporativo",
-    desc: "Imagen profesional desde el primer email.",
+    icon: TrendingUp,
+    title: "Más visibilidad online",
+    desc: "Presencia en Google y redes sociales para que te encuentren fácilmente.",
   },
   {
-    icon: Share2,
-    title: "Redes sociales y presencia online",
-    desc: "Tu negocio visible y preparado para generar confianza.",
+    icon: Zap,
+    title: "Atención más rápida",
+    desc: "Automatizaciones que responden y filtran clientes sin esfuerzo manual.",
   },
   {
-    icon: LayoutDashboard,
-    title: "Aplicación adaptada a tu negocio",
-    desc: "Organiza clientes, contactos y presupuestos en un solo lugar.",
+    icon: BadgeCheck,
+    title: "Imagen más profesional",
+    desc: "Dominio, correo corporativo y web alineados con la calidad de tu trabajo.",
   },
 ];
 
@@ -34,20 +34,20 @@ export function HowWeHelp() {
       <div className="mx-auto max-w-5xl px-5 py-14 md:py-16">
         <div className="max-w-2xl">
           <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand/70">
-            Servicios clave
+            Resultados
           </div>
 
           <h2 className="mt-2 font-serif text-3xl md:text-4xl text-white leading-tight">
-            Lo que hago por tu negocio
+            Qué resultados obtienes
           </h2>
 
           <p className="mt-4 text-base text-white/70 max-w-xl leading-relaxed">
-            Soluciones digitales premium para que tu negocio funcione con una presencia clara y profesional.
+            Una presencia profesional pensada para generar confianza, mejorar organización y facilitar el crecimiento de tu negocio.
           </p>
         </div>
 
         <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map(({ icon: Icon, title, desc }) => (
+          {results.map(({ icon: Icon, title, desc }) => (
             <article key={title} className="flex flex-col gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-soft/15 text-brand shadow-sm shadow-black/20 shrink-0">
                 <Icon className="h-5 w-5" />

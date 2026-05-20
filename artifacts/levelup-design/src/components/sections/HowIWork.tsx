@@ -1,12 +1,5 @@
 import { Link } from "wouter";
-
-import {
-  Search,
-  PenTool,
-  Code2,
-  Gauge,
-  ArrowUpRight,
-} from "lucide-react";
+import { Search, PenTool, Code2, Gauge, ArrowUpRight } from "lucide-react";
 
 export function HowIWork() {
   const steps = [
@@ -14,25 +7,25 @@ export function HowIWork() {
       n: "01",
       icon: Search,
       title: "Analizo",
-      desc: "Tu negocio y objetivos",
+      desc: "Estudio tu negocio, objetivos y necesidades reales.",
     },
     {
       n: "02",
       icon: PenTool,
       title: "Diseño",
-      desc: "Tu presencia digital",
+      desc: "Creo una estructura visual clara y profesional.",
     },
     {
       n: "03",
       icon: Code2,
       title: "Desarrollo",
-      desc: "Web y herramientas",
+      desc: "Construyo la web, automatizaciones y herramientas.",
     },
     {
       n: "04",
       icon: Gauge,
       title: "Optimizo",
-      desc: "Todo funcionando",
+      desc: "Mejoro funcionamiento, velocidad y experiencia.",
     },
   ];
 
@@ -55,7 +48,6 @@ export function HowIWork() {
             className="group inline-flex items-center gap-2 text-base font-medium text-brand border-b-2 border-brand/40 hover:border-brand pb-1 px-1 transition-all hover:gap-3"
           >
             Ver nuestros proyectos
-
             <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>
@@ -71,11 +63,10 @@ export function HowIWork() {
                 <span className="font-serif text-xs text-brand/60 tracking-wider">
                   {n}
                 </span>
-
                 <h3 className="font-serif text-lg text-white">{title}</h3>
               </div>
 
-              <p className="mt-0.5 text-sm text-white/70">{desc}</p>
+              <p className="mt-1 text-sm text-white/65 leading-relaxed">{desc}</p>
             </li>
           ))}
         </ol>

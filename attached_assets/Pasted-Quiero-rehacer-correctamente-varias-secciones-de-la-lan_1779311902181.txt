@@ -1,0 +1,133 @@
+Quiero rehacer correctamente varias secciones de la landing manteniendo el diseño premium oscuro actual.
+
+NO cambiar:
+- colores
+- estética
+- navbar
+- hero
+- tipografías
+- responsive
+- animaciones
+
+SOLO mejorar contenido y estructura.
+
+========================================
+1. SECCIÓN “QUIÉN SOY”
+========================================
+
+La sección actual tiene textos demasiado genéricos y poco profesionales.
+
+Eliminar frases tipo:
+- “comunicación clara de principio a fin”
+- “marcas digitales”
+- textos vacíos o demasiado genéricos
+
+Quiero un enfoque más real y orientado a negocio.
+
+Mantener el título:
+“Trabajo directamente contigo”
+
+Nuevo texto principal:
+
+“Desarrollo webs, sistemas y herramientas digitales pensadas para negocios reales. Cada proyecto se construye de forma personalizada según las necesidades de cada cliente.”
+
+Segundo texto:
+
+“No trabajo con plantillas genéricas ni soluciones improvisadas. Busco que cada negocio tenga una presencia profesional, clara y útil para captar clientes y organizar mejor su trabajo.”
+
+========================================
+2. SECCIÓN “CÓMO TRABAJO”
+========================================
+
+Actualmente los 4 puntos aparecen demasiado simples y mal explicados.
+
+Mantener:
+- Analizo
+- Diseño
+- Desarrollo
+- Optimizo
+
+Pero añadir una explicación breve debajo de cada uno.
+
+1.
+Analizo
+“Estudio tu negocio, objetivos y necesidades reales.”
+
+2.
+Diseño
+“Creo una estructura visual clara y profesional.”
+
+3.
+Desarrollo
+“Construyo la web, automatizaciones y herramientas.”
+
+4.
+Optimizo
+“Mejoro funcionamiento, velocidad y experiencia.”
+
+Mantener el estilo minimal actual.
+
+========================================
+3. CAMBIAR SECCIÓN REPETIDA DE SERVICIOS
+========================================
+
+La sección actual “Lo que hago por tu negocio” repite servicios que ya están explicados más abajo.
+
+NO repetir servicios.
+
+Cambiar esa sección para que hable de RESULTADOS y BENEFICIOS.
+
+Nuevo título:
+“Qué resultados obtienes”
+
+Nuevo subtítulo:
+“Una presencia profesional pensada para generar confianza, mejorar organización y facilitar el crecimiento de tu negocio.”
+
+Los bloques deben enfocarse en resultados, NO en servicios.
+
+Ejemplos de enfoque:
+- Más confianza visual
+- Mejor organización
+- Más visibilidad
+- Atención más rápida
+- Imagen más profesional
+
+NO usar textos genéricos vacíos.
+
+========================================
+4. ÚLTIMA SECCIÓN DE SERVICIOS
+========================================
+
+Aquí sí quiero dejar claros los servicios finales.
+
+Deben quedar SOLO 4 bloques.
+
+1️⃣ Página web profesional
+Texto:
+“Diseño moderno orientado a captar clientes y transmitir profesionalidad.”
+
+2️⃣ Automatización WhatsApp + Google Business
+Texto:
+“Atención rápida, automatizada y mayor visibilidad local.”
+
+3️⃣ Gestión de redes sociales + email corporativo
+Texto:
+“Imagen profesional y presencia online coherente para tu negocio.”
+
+4️⃣ App personalizada para tu negocio
+Texto:
+“Gestión de clientes, presupuestos, contactos y calendario en un solo lugar.”
+
+Usar iconos coherentes y mantener el diseño premium oscuro.
+
+========================================
+5. IMPORTANTE
+========================================
+
+- NO duplicar contenido
+- NO repetir servicios en varias secciones
+- Mantener coherencia visual
+- Mantener responsive
+- Revisar JSX/TSX
+- Verificar npm run dev
+- Asegurar que la preview funciona correctamente
