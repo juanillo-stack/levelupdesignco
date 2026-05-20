@@ -8,8 +8,8 @@ export function Header() {
     <header className="fixed top-0 inset-x-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto max-w-6xl px-5 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-baseline gap-1.5 group">
-          <span className="font-serif text-xl font-semibold text-brand">LevelUp</span>
-          <span className="font-sans text-sm font-medium tracking-wide text-ink-soft">Design Co.</span>
+          <span className="font-serif text-xl font-semibold text-brand" translate="no">LevelUp</span>
+          <span className="font-sans text-sm font-medium tracking-wide text-ink-soft" translate="no">Design Co.</span>
         </Link>
         <div className="flex items-center gap-3 sm:gap-5">
           <a

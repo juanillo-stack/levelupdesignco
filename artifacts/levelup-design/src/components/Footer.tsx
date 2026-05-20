@@ -71,7 +71,7 @@ export function Footer() {
             <p className="text-xs uppercase tracking-[0.32em] text-slate-500">Enlaces</p>
             <div className="flex flex-col gap-2">
               <a
-                href="https://linkedin.com/in/juanillo-stack"
+                href="https://linkedin.com/company/levelupdesignco"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-slate-700 transition hover:text-slate-900"
@@ -86,7 +86,7 @@ export function Footer() {
                 className="flex items-center gap-3 text-slate-700 transition hover:text-slate-900"
               >
                 <Twitter className="h-4 w-4 text-slate-500" />
-                levelupdesignco
+                @levelupdesignco
               </a>
               <a
                 href="https://github.com/juanillo-stack"
