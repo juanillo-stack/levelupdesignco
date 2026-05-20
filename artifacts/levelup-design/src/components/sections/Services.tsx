@@ -13,19 +13,19 @@ const items = [
   },
   {
     icon: Share2,
-    title: "Gestión de redes sociales + email corporativo",
+    title: "Gestión de redes sociales + correo corporativo",
     desc: "Imagen profesional y presencia online coherente para tu negocio.",
   },
   {
     icon: LayoutDashboard,
-    title: "App personalizada para tu negocio",
+    title: "Aplicación personalizada para tu negocio",
     desc: "Gestión de clientes, presupuestos, contactos y calendario en un solo lugar.",
   },
 ];
 
 export function Services() {
   return (
-    <section id="servicios" className="mx-auto max-w-5xl px-5 py-12">
+    <section id="servicios" className="mx-auto max-w-6xl px-5 py-12">
       <div className="max-w-2xl">
         <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand/70">
           Servicios
@@ -40,15 +40,18 @@ export function Services() {
         </p>
       </div>
 
-      <div className="mt-10 grid gap-10 sm:grid-cols-2">
+      <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {items.map(({ icon: Icon, title, desc }) => (
-          <div key={title} className="flex items-start gap-4">
+          <div
+            key={title}
+            className="flex flex-col gap-4 rounded-2xl border border-white/8 bg-white/[0.035] p-6 backdrop-blur-sm"
+          >
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand-soft/15 text-brand shadow-sm shadow-black/20 shrink-0">
               <Icon className="h-5 w-5" />
             </div>
 
             <div>
-              <h3 className="font-serif text-lg text-white leading-tight">
+              <h3 className="font-serif text-lg text-white leading-snug">
                 {title}
               </h3>
               <p className="mt-2 text-sm text-white/65 leading-relaxed">
