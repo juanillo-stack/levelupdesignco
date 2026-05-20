@@ -22,7 +22,7 @@ export function Header() {
             <MessageCircle className="h-4 w-4" />
           </a>
           <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="hidden sm:inline text-sm font-medium text-ink hover:text-brand transition-colors">
-            Contacta conmigo
+            Solicitar asesoramiento
           </a>
           <span className="hidden md:inline text-sm text-ink-soft">Juan Leiva</span>
         </div>

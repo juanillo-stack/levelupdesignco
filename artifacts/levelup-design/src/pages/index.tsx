@@ -2,6 +2,7 @@ import { ProblemSolution } from "@/components/sections/ProblemSolution";
 import { HowIWork } from "@/components/sections/HowIWork";
 import { Services } from "@/components/sections/Services";
 import { HowWeHelp } from "@/components/sections/HowWeHelp";
+import { ForWhom } from "@/components/sections/ForWhom";
 import { Hero } from "@/components/sections/Hero";
 import { Founder } from "@/components/sections/Founder";
 import { LifestyleBand } from "@/components/sections/LifestyleBand";
@@ -55,6 +56,7 @@ export default function IndexPage() {
           <div className="relative z-10">
             <HowWeHelp />
             <ProblemSolution />
+            <ForWhom />
             <Services />
           </div>
         </section>

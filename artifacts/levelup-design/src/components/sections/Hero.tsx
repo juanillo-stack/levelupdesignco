@@ -60,7 +60,7 @@ export function Hero() {
               href="#servicios"
               className="inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/10 px-5 py-3 text-sm font-medium text-white transition-[transform,border-color,box-shadow] duration-300 ease-out hover:-translate-y-px hover:border-brand/40 hover:shadow-sm"
             >
-              Ver servicios
+              Ver cómo puedo ayudarte
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
