@@ -7,25 +7,29 @@ export function HowIWork() {
       n: "01",
       icon: Search,
       title: "Analizo",
-      desc: "Estudio tu negocio, objetivos y necesidades reales.",
+      sub: "Tu negocio y objetivos",
+      desc: "Necesito entender qué haces, qué quieres conseguir y cómo quieres que la gente vea tu marca.",
     },
     {
       n: "02",
       icon: PenTool,
       title: "Diseño",
-      desc: "Creo una estructura visual clara y profesional.",
+      sub: "Tu presencia digital",
+      desc: "Diseño pensado para transmitir quién eres, cómo trabajas y la personalidad de tu marca.",
     },
     {
       n: "03",
       icon: Code2,
       title: "Desarrollo",
-      desc: "Construyo la web, automatizaciones y herramientas.",
+      sub: "Web y herramientas",
+      desc: "Construyo la web y las herramientas necesarias para que tu negocio tenga una presencia sólida y profesional.",
     },
     {
       n: "04",
       icon: Gauge,
       title: "Optimizo",
-      desc: "Mejoro funcionamiento, velocidad y experiencia.",
+      sub: "Todo funcionando",
+      desc: "Reviso cada detalle para que la experiencia sea clara, cómoda y coherente en toda la web.",
     },
   ];
 
@@ -53,7 +57,7 @@ export function HowIWork() {
         </div>
 
         <ol className="relative space-y-8">
-          {steps.map(({ n, icon: Icon, title, desc }) => (
+          {steps.map(({ n, icon: Icon, title, sub, desc }) => (
             <li key={n} className="relative pl-12 pb-4 last:pb-0">
               <div className="absolute left-0 top-0 h-8 w-8 rounded-full bg-brand/15 text-brand flex items-center justify-center shadow-sm shadow-black/20">
                 <Icon className="h-4 w-4" />
@@ -66,6 +70,7 @@ export function HowIWork() {
                 <h3 className="font-serif text-lg text-white">{title}</h3>
               </div>
 
+              <p className="mt-0.5 text-sm text-white/50">{sub}</p>
               <p className="mt-1 text-sm text-white/65 leading-relaxed">{desc}</p>
             </li>
           ))}
