@@ -9,11 +9,11 @@ export function Footer() {
             <p className="text-xs uppercase tracking-[0.32em] text-slate-500">Contacto</p>
             <div className="space-y-2">
               <a
-                href="tel:606889991"
+                href="tel:606899991"
                 className="inline-flex items-center gap-3 text-slate-700 transition hover:text-slate-900"
               >
                 <Phone className="h-4 w-4 text-slate-500" />
-                606 889 991
+                606 899 991
               </a>
               <a
                 href="mailto:contacto@levelupdesign.com"
