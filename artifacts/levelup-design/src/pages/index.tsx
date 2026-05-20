@@ -3,6 +3,7 @@ import { HowIWork } from "@/components/sections/HowIWork";
 import { Services } from "@/components/sections/Services";
 import { HowWeHelp } from "@/components/sections/HowWeHelp";
 import { ForWhom } from "@/components/sections/ForWhom";
+import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Hero } from "@/components/sections/Hero";
 import { Founder } from "@/components/sections/Founder";
 import { LifestyleBand } from "@/components/sections/LifestyleBand";
@@ -58,6 +59,7 @@ export default function IndexPage() {
             <ProblemSolution />
             <ForWhom />
             <Services />
+            <FinalCTA />
           </div>
         </section>
       </main>
