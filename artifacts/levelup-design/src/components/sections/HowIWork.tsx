@@ -6,30 +6,30 @@ export function HowIWork() {
     {
       n: "01",
       icon: Search,
-      title: "Analizo",
-      sub: "Tu negocio y objetivos",
-      desc: "Necesito entender qué haces, qué quieres conseguir y cómo quieres que la gente vea tu marca.",
+      title: "Análisis",
+      sub: "Negocio y objetivos",
+      desc: "El proceso parte de un estudio en profundidad del negocio, los objetivos reales y la percepción de marca deseada.",
     },
     {
       n: "02",
       icon: PenTool,
       title: "Diseño",
-      sub: "Tu presencia digital",
-      desc: "Diseño pensado para transmitir quién eres, cómo trabajas y la personalidad de tu marca.",
+      sub: "Presencia digital",
+      desc: "Diseño visual estratégico que refleja la personalidad, los valores y la propuesta de valor de cada proyecto.",
     },
     {
       n: "03",
       icon: Code2,
       title: "Desarrollo",
       sub: "Web y herramientas",
-      desc: "Construyo la web y las herramientas necesarias para que tu negocio tenga una presencia sólida y profesional.",
+      desc: "Construcción de la solución digital completa: web, automatizaciones y herramientas adaptadas a cada negocio.",
     },
     {
       n: "04",
       icon: Gauge,
-      title: "Optimizo",
-      sub: "Todo funcionando",
-      desc: "Reviso cada detalle para que la experiencia sea clara, cómoda y coherente en toda la web.",
+      title: "Optimización",
+      sub: "Resultado final",
+      desc: "Revisión exhaustiva de cada componente para garantizar una experiencia fluida, clara y coherente.",
     },
   ];
 
@@ -43,7 +43,7 @@ export function HowIWork() {
             </div>
 
             <h2 className="mt-1.5 font-serif text-2xl md:text-3xl text-white">
-              Cómo trabajo
+              Metodología de trabajo
             </h2>
           </div>
 
@@ -51,7 +51,7 @@ export function HowIWork() {
             to="/trabajos"
             className="group inline-flex items-center gap-2 text-base font-medium text-brand border-b-2 border-brand/40 hover:border-brand pb-1 px-1 transition-all hover:gap-3"
           >
-            Ver nuestros proyectos
+            Ver proyectos
             <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>

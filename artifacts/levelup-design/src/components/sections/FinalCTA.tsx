@@ -7,15 +7,15 @@ export function FinalCTA() {
     <section className="bg-transparent">
       <div className="mx-auto max-w-3xl px-5 py-16 md:py-20 text-center">
         <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand/70">
-          ¿Hablamos?
+          Contacto
         </div>
 
         <h2 className="mt-3 font-serif text-3xl md:text-4xl text-white leading-tight">
-          Tu negocio merece una presencia que lo represente de verdad.
+          Todo negocio merece una presencia digital que lo represente con rigor.
         </h2>
 
         <p className="mt-5 text-base text-white/60 leading-relaxed max-w-xl mx-auto">
-          Si quieres mejorar tu imagen, captar más clientes o poner en orden tu presencia digital, escríbeme. Sin compromiso.
+          Si buscas mejorar tu imagen, captar más clientes o estructurar tu presencia online, el estudio está disponible para valorar tu proyecto sin compromiso.
         </p>
 
         <a

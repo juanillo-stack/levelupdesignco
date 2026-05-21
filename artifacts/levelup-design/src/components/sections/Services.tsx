@@ -4,22 +4,22 @@ const items = [
   {
     icon: Globe,
     title: "Página web profesional",
-    desc: "Diseño moderno orientado a captar clientes y transmitir profesionalidad.",
+    desc: "Diseño moderno orientado a captar clientes y transmitir profesionalidad desde el primer vistazo.",
   },
   {
     icon: MessageCircle,
-    title: "Automatización WhatsApp + Google Business",
-    desc: "Atención rápida, automatizada y mayor visibilidad local.",
+    title: "WhatsApp automatizado + Google Business",
+    desc: "Atención automatizada y mayor visibilidad local para captar clientes sin esfuerzo manual.",
   },
   {
     icon: Share2,
-    title: "Gestión de redes sociales + correo corporativo",
-    desc: "Imagen profesional y presencia online coherente para tu negocio.",
+    title: "Redes sociales + correo corporativo",
+    desc: "Presencia online coherente e imagen profesional en todos los canales del negocio.",
   },
   {
     icon: LayoutDashboard,
-    title: "Aplicación personalizada para tu negocio",
-    desc: "Gestión de clientes, presupuestos, contactos y calendario en un solo lugar.",
+    title: "Aplicación a medida",
+    desc: "Gestión centralizada de clientes, presupuestos, contactos y calendario en una sola herramienta.",
   },
 ];
 
@@ -32,11 +32,11 @@ export function Services() {
         </div>
 
         <h2 className="mt-2 font-serif text-3xl text-white">
-          Lo que hago por tu negocio
+          Soluciones digitales del estudio
         </h2>
 
         <p className="mt-4 text-base text-white/70 leading-relaxed max-w-xl">
-          Soluciones digitales premium para que tu negocio funcione con una presencia clara y profesional.
+          Cada solución se diseña y desarrolla de forma personalizada, sin plantillas ni procesos genéricos.
         </p>
       </div>
 

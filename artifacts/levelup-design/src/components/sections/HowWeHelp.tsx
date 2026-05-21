@@ -5,21 +5,21 @@ const cards = [
   {
     icon: Eye,
     title: "Claridad",
-    desc: "Cuando una marca transmite orden, claridad y confianza, el cliente entiende rápidamente quién eres y por qué debería elegirte.",
+    desc: "Una marca que transmite orden y confianza permite al cliente entender de inmediato su propuesta de valor y diferenciación.",
     cta: "Transmitir confianza",
     to: "/pagina-web-malaga" as const,
   },
   {
     icon: Fingerprint,
     title: "Identidad",
-    desc: "No trabajo con plantillas genéricas. Cada proyecto busca reflejar personalidad, intención y una imagen coherente.",
+    desc: "Cada proyecto se desarrolla sin plantillas genéricas. El resultado refleja la personalidad, la intención y una imagen de marca coherente.",
     cta: "Crear identidad",
     to: "/pagina-web-malaga" as const,
   },
   {
     icon: Globe,
     title: "Presencia",
-    desc: "Una buena presencia digital no solo se ve bien. También transmite profesionalidad, valor y confianza desde el primer vistazo.",
+    desc: "Una presencia digital bien construida no solo resulta visualmente sólida, sino que transmite profesionalidad y valor desde el primer contacto.",
     cta: "Mejorar presencia",
     to: "/conseguir-clientes-malaga" as const,
   },
@@ -31,15 +31,15 @@ export function HowWeHelp() {
       <div className="mx-auto max-w-5xl px-5 py-10">
         <div className="max-w-2xl">
           <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand/70">
-            Servicios clave
+            Enfoque
           </div>
 
           <h2 className="mt-1.5 font-serif text-3xl text-white">
-            Tu presencia online habla antes que tú
+            La presencia online habla antes que cualquier argumento
           </h2>
 
           <p className="mt-4 text-base text-white/70 max-w-xl leading-relaxed">
-            La forma en la que tu negocio se presenta influye directamente en cómo te perciben tus clientes.
+            La forma en que un negocio se presenta digitalmente determina directamente cómo lo perciben sus clientes potenciales.
           </p>
         </div>
 
