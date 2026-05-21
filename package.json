@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "dev": "cd artifacts/levelup-design && BASE_PATH=/ PORT=8080 bun run dev",
     "build": "cd artifacts/levelup-design && BASE_PATH=/ PORT=8080 bun run build"
   },
   "private": true,
