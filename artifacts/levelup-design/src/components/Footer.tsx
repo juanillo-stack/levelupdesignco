@@ -1,4 +1,5 @@
 import { ArrowUp, Facebook, Instagram, Linkedin, MapPin, Mail, Phone, Twitter } from "lucide-react";
+import { Link } from "wouter";
 
 function ThreadsIcon({ className }: { className?: string }) {
   return (
@@ -108,9 +109,9 @@ export function Footer() {
               <ArrowUp className="h-4 w-4 text-slate-500" />
             </a>
             <p className="text-slate-500" translate="no">© 2025 LevelUp Design Co.</p>
-            <a href="/privacidad" className="text-xs text-slate-400 hover:text-slate-600 transition-colors">
+            <Link to="/privacidad" className="text-xs text-slate-400 hover:text-slate-600 transition-colors">
               Política de privacidad
-            </a>
+            </Link>
           </div>
         </div>
       </div>
