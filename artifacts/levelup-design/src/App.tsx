@@ -8,6 +8,8 @@ import PaginaWebMalagaPage from "@/pages/pagina-web-malaga";
 import ConseguirClientesMalagaPage from "@/pages/conseguir-clientes-malaga";
 import ComoConseguirClientesPage from "@/pages/como-conseguir-clientes-negocio";
 import PrivacidadPage from "@/pages/privacidad";
+import CookiesPage from "@/pages/cookies";
+import AvisoLegalPage from "@/pages/aviso-legal";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -21,6 +23,8 @@ function Router() {
       <Route path="/conseguir-clientes-malaga" component={ConseguirClientesMalagaPage} />
       <Route path="/como-conseguir-clientes-negocio" component={ComoConseguirClientesPage} />
       <Route path="/privacidad" component={PrivacidadPage} />
+      <Route path="/cookies" component={CookiesPage} />
+      <Route path="/aviso-legal" component={AvisoLegalPage} />
       <Route component={NotFound} />
     </Switch>
   );

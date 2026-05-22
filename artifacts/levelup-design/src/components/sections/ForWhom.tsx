@@ -4,22 +4,22 @@ const profiles = [
   {
     icon: Store,
     title: "Negocios locales",
-    desc: "Para negocios que necesitan una presencia más profesional y captar más clientes.",
+    desc: "Para empresas que necesitan una presencia más profesional y nuevos canales de captación.",
   },
   {
     icon: User,
     title: "Marcas personales",
-    desc: "Para profesionales que quieren transmitir autoridad y diferenciarse.",
+    desc: "Para profesionales que buscan transmitir autoridad, confianza y una identidad diferencial.",
   },
   {
     icon: TrendingUp,
     title: "Empresas en crecimiento",
-    desc: "Para negocios que necesitan sistemas digitales más organizados y eficientes.",
+    desc: "Para organizaciones que necesitan sistemas digitales más organizados, medibles y eficientes.",
   },
   {
     icon: RefreshCw,
     title: "Negocios desactualizados",
-    desc: "Para marcas con una imagen antigua o una presencia online poco cuidada.",
+    desc: "Para marcas con una imagen antigua o una presencia online que ya no refleja su nivel real.",
   },
 ];
 
@@ -32,7 +32,7 @@ export function ForWhom() {
             Para quién
           </div>
           <h2 className="mt-2 font-serif text-3xl md:text-4xl text-white leading-tight">
-            ¿Para quién es esto?
+            Empresas y profesionales que necesitan una presencia digital mejor construida
           </h2>
         </div>
 

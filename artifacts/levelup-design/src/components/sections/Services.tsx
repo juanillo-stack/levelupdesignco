@@ -4,22 +4,22 @@ const items = [
   {
     icon: Globe,
     title: "Página web profesional",
-    desc: "Diseño moderno orientado a captar clientes y transmitir profesionalidad desde el primer vistazo.",
+    desc: "Diseño web moderno, responsive y orientado a convertir visitas en oportunidades comerciales.",
   },
   {
     icon: MessageCircle,
     title: "WhatsApp automatizado + Google Business",
-    desc: "Atención automatizada y mayor visibilidad local para captar clientes sin esfuerzo manual.",
+    desc: "Atención más ágil, mayor visibilidad local y flujos preparados para reducir trabajo manual.",
   },
   {
     icon: Share2,
     title: "Redes sociales + correo corporativo",
-    desc: "Presencia online coherente e imagen profesional en todos los canales del negocio.",
+    desc: "Identidad coherente e imagen profesional en los canales clave de comunicación digital.",
   },
   {
     icon: LayoutDashboard,
     title: "Aplicación a medida",
-    desc: "Gestión centralizada de clientes, presupuestos, contactos y calendario en una sola herramienta.",
+    desc: "Herramientas internas para centralizar clientes, presupuestos, contactos y agenda en un solo entorno.",
   },
 ];
 
@@ -36,7 +36,7 @@ export function Services() {
         </h2>
 
         <p className="mt-4 text-base text-white/70 leading-relaxed max-w-xl">
-          Cada solución se diseña y desarrolla de forma personalizada, sin plantillas ni procesos genéricos.
+          Cada solución se diseña y desarrolla de forma personalizada para elevar la presencia online, automatizar procesos y ordenar la operación digital del negocio.
         </p>
       </div>
 

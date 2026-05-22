@@ -11,11 +11,11 @@ export function FinalCTA() {
         </div>
 
         <h2 className="mt-3 font-serif text-3xl md:text-4xl text-white leading-tight">
-          Todo negocio merece una presencia digital que lo represente con rigor.
+          Creamos experiencias digitales pensadas para hacer crecer negocios reales.
         </h2>
 
         <p className="mt-5 text-base text-white/60 leading-relaxed max-w-xl mx-auto">
-          Si buscas mejorar tu imagen, captar más clientes o estructurar tu presencia online, el estudio está disponible para valorar tu proyecto sin compromiso.
+          Si una empresa necesita mejorar su imagen, captar más clientes o estructurar su presencia online, LevelUp Design Co. puede valorar el proyecto y proponer una solución clara.
         </p>
 
         <a
@@ -25,7 +25,7 @@ export function FinalCTA() {
           className="mt-8 inline-flex items-center gap-2.5 rounded-md bg-brand px-7 py-3.5 text-sm font-medium text-brand-foreground shadow-[0_4px_20px_rgba(123,30,43,0.3)] transition-[transform,box-shadow,background-color] duration-300 ease-out hover:-translate-y-px hover:bg-[oklch(0.32_0.12_18)] hover:shadow-[0_8px_28px_rgba(123,30,43,0.45)]"
         >
           <MessageCircle className="h-4 w-4" />
-          Solicitar asesoramiento por WhatsApp
+          Contáctame por WhatsApp
         </a>
       </div>
     </section>
