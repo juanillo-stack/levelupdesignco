@@ -2,11 +2,10 @@ import { Link } from "wouter";
 import { MessageCircle, CheckCircle2, TrendingUp, Clock, Users, Search, Wrench, Phone, ArrowRight } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { SEO } from "@/components/SEO";
 
 const WHATSAPP = "https://wa.me/34606899991";
 
-function WhatsAppButton({ label = "Contáctame por WhatsApp" }: { label?: string }) {
+function WhatsAppButton({ label = "Quiero más clientes" }: { label?: string }) {
   return (
     <a
       href={WHATSAPP}
@@ -23,10 +22,6 @@ function WhatsAppButton({ label = "Contáctame por WhatsApp" }: { label?: string
 export default function ConseguirClientesMalagaPage() {
   return (
     <div id="top" className="min-h-screen bg-background">
-      <SEO
-        title="Captación digital y automatización en Málaga | LevelUp Design Co."
-        description="Sistema de diseño web, WhatsApp, Google Business y automatización para empresas que quieren mejorar su captación de clientes en Málaga."
-      />
       <Header />
       <main className="pt-16">
         {/* Hero */}
@@ -37,10 +32,10 @@ export default function ConseguirClientesMalagaPage() {
               Captación · Málaga
             </div>
             <h1 className="mt-5 font-serif text-4xl md:text-6xl leading-[1.02] font-semibold text-ink">
-              Captación digital para empresas que quieren crecer sin improvisar.
+              Más <span className="text-brand italic">clientes</span>.<br />Menos esperar.
             </h1>
             <p className="mt-5 text-lg md:text-xl text-ink-soft max-w-xl">
-              LevelUp Design Co. estructura un sistema simple y profesional para mejorar la visibilidad, facilitar el contacto y convertir interés en conversaciones.
+              Te montamos un sistema simple para que el teléfono empiece a sonar.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <WhatsAppButton />
@@ -54,12 +49,12 @@ export default function ConseguirClientesMalagaPage() {
         {/* Solución */}
         <section className="mx-auto max-w-4xl px-5 py-14">
           <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand">La solución</div>
-          <h2 className="mt-2 font-serif text-3xl md:text-4xl text-ink">Web + WhatsApp + presencia local.</h2>
+          <h2 className="mt-2 font-serif text-3xl md:text-4xl text-ink">Web + WhatsApp. Punto.</h2>
           <div className="mt-7 grid md:grid-cols-3 gap-4">
             {[
-              { t: "Web que convierte", d: "Cada sección guía al cliente potencial hacia una acción clara." },
-              { t: "WhatsApp directo", d: "Un clic para iniciar una conversación comercial sin fricción." },
-              { t: "Activo 24/7", d: "Un sistema disponible incluso cuando el equipo no está conectado." },
+              { t: "Web que convierte", d: "Cada sección empuja al cliente a escribirte." },
+              { t: "WhatsApp directo", d: "Un clic y ya está hablando contigo." },
+              { t: "Activo 24/7", d: "Sin depender de redes ni de la suerte." },
             ].map((x) => (
               <div key={x.t} className="p-5 rounded-lg border border-border bg-background hover:border-brand transition-all">
                 <CheckCircle2 className="h-5 w-5 text-brand" />
@@ -74,7 +69,7 @@ export default function ConseguirClientesMalagaPage() {
         <section className="border-y border-border bg-brand-soft/40">
           <div className="mx-auto max-w-4xl px-5 py-14">
             <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand">Resultados</div>
-            <h2 className="mt-2 font-serif text-3xl md:text-4xl text-ink">Resultados visibles en la operación comercial</h2>
+            <h2 className="mt-2 font-serif text-3xl md:text-4xl text-ink">Lo que vas a notar</h2>
             <div className="mt-7 grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {[
                 { i: Users, t: "Más contactos" },
@@ -99,9 +94,9 @@ export default function ConseguirClientesMalagaPage() {
           <h2 className="mt-2 font-serif text-3xl md:text-4xl text-ink">3 pasos. Sin complicaciones.</h2>
           <ol className="mt-7 space-y-4">
             {[
-              { n: "01", i: Search, t: "Análisis del negocio", d: "Oferta, objetivos, competencia y puntos de contacto actuales." },
-              { n: "02", i: Wrench, t: "Construcción del sistema", d: "Web, WhatsApp y activos digitales preparados para captar." },
-              { n: "03", i: MessageCircle, t: "Recepción de contactos", d: "Los clientes potenciales encuentran un canal directo para iniciar la conversación." },
+              { n: "01", i: Search, t: "Analizamos tu negocio", d: "Qué ofreces y cómo te encuentran hoy." },
+              { n: "02", i: Wrench, t: "Montamos el sistema", d: "Web + WhatsApp listos para captar." },
+              { n: "03", i: MessageCircle, t: "Recibes contactos", d: "Los clientes te escriben al móvil." },
             ].map(({ n, i: Icon, t, d }) => (
               <li key={n} className="flex gap-4 p-5 rounded-lg border border-border bg-background hover:border-brand transition-all">
                 <div className="h-10 w-10 shrink-0 rounded-md bg-brand text-brand-foreground flex items-center justify-center">
@@ -138,9 +133,9 @@ export default function ConseguirClientesMalagaPage() {
         <section className="mx-auto max-w-4xl px-5 py-14">
           <div className="rounded-2xl bg-brand text-brand-foreground p-8 md:p-12 text-center shadow-[0_20px_50px_-15px_rgba(123,30,43,0.4)]">
             <h2 className="font-serif text-2xl md:text-3xl max-w-2xl mx-auto leading-tight">
-              Un sistema digital claro permite captar con más consistencia.
+              Empieza a recibir clientes esta semana.
             </h2>
-            <p className="mt-3 opacity-90">El estudio puede revisar cada caso por WhatsApp y plantear el siguiente paso.</p>
+            <p className="mt-3 opacity-90">Cuéntame tu caso por WhatsApp, sin compromiso.</p>
             <div className="mt-6 flex justify-center">
               <a
                 href={WHATSAPP}
@@ -149,7 +144,7 @@ export default function ConseguirClientesMalagaPage() {
                 className="inline-flex items-center gap-2 bg-background text-brand px-6 py-3.5 rounded-md text-sm font-semibold shadow-lg transition-all hover:-translate-y-0.5"
               >
                 <MessageCircle className="h-4 w-4" />
-                Contáctame por WhatsApp
+                Escríbeme por WhatsApp
               </a>
             </div>
           </div>

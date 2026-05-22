@@ -21,17 +21,17 @@ export function Hero() {
             style={{ animationDelay: "40ms" }}
           >
             <span className="h-1.5 w-1.5 rounded-full bg-brand" />
-            ESTUDIO WEB & AUTOMATIZACIÓN
+            CONSULTORÍA WEB & AUTOMATIZACIÓN
           </div>
 
           <h1
             className="hero-enter mt-5 font-serif text-[2.15rem] font-semibold leading-[1.05] text-white sm:text-5xl lg:text-[3.35rem]"
             style={{ animationDelay: "120ms" }}
           >
-            Diseño web &
+            Desarrollo Web &
             <br />
             <span className="italic text-brand">
-              digitalización de negocios
+              Optimización de Empresas
             </span>
           </h1>
 
@@ -39,7 +39,7 @@ export function Hero() {
             className="hero-enter mt-4 font-serif text-xl italic text-white/80 md:text-2xl"
             style={{ animationDelay: "200ms" }}
           >
-            Presencia online profesional para empresas que quieren crecer con claridad, tecnología y una marca mejor posicionada.
+            De idea a negocio.
           </p>
 
           <div
@@ -53,14 +53,14 @@ export function Hero() {
               className="inline-flex items-center gap-2 rounded-md bg-brand px-5 py-3 text-sm font-medium text-brand-foreground shadow-[0_4px_14px_rgba(123,30,43,0.25)] transition-[transform,box-shadow,background-color] duration-300 ease-out hover:-translate-y-px hover:bg-[oklch(0.32_0.12_18)] hover:shadow-[0_8px_24px_rgba(123,30,43,0.35)]"
             >
               <MessageCircle className="h-4 w-4" />
-              Contáctame por WhatsApp
+              Solicitar asesoramiento por WhatsApp
             </a>
 
             <a
               href="#servicios"
               className="inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/10 px-5 py-3 text-sm font-medium text-white transition-[transform,border-color,box-shadow] duration-300 ease-out hover:-translate-y-px hover:border-brand/40 hover:shadow-sm"
             >
-              Ver soluciones digitales
+              Ver servicios
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>

@@ -2,11 +2,10 @@ import { Link } from "wouter";
 import { MessageCircle, Globe, Smartphone, Lightbulb, ArrowRight } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { SEO } from "@/components/SEO";
 
 const WHATSAPP = "https://wa.me/34606899991";
 
-function WhatsAppButton({ label = "Contáctame por WhatsApp" }: { label?: string }) {
+function WhatsAppButton({ label = "Escríbeme por WhatsApp" }: { label?: string }) {
   return (
     <a
       href={WHATSAPP}
@@ -37,10 +36,6 @@ function Section({ title, icon: Icon, children }: { title: string; icon: React.E
 export default function ComoConseguirClientesPage() {
   return (
     <div id="top" className="min-h-screen bg-background">
-      <SEO
-        title="Cómo conseguir clientes para un negocio | LevelUp Design Co."
-        description="Guía profesional sobre presencia online, web que convierte, Google Business y WhatsApp como canal de captación para empresas."
-      />
       <Header />
       <main className="pt-16">
         {/* Hero */}
@@ -51,10 +46,10 @@ export default function ComoConseguirClientesPage() {
               Guía práctica
             </div>
             <h1 className="mt-5 font-serif text-4xl md:text-6xl leading-[1.02] font-semibold text-ink">
-              Cómo conseguir <span className="text-brand italic">clientes</span> con una presencia digital mejor diseñada
+              Cómo conseguir <span className="text-brand italic">clientes</span> para tu negocio
             </h1>
             <p className="mt-5 text-lg text-ink-soft max-w-xl">
-              Una guía práctica para entender qué necesita una empresa cuando quiere mejorar su visibilidad, confianza y captación online.
+              Lo que funciona hoy. Sin teoría, sin relleno.
             </p>
             <div className="mt-7"><WhatsAppButton /></div>
           </div>
@@ -64,17 +59,17 @@ export default function ComoConseguirClientesPage() {
         <article className="mx-auto max-w-3xl px-5">
           <Section title="Presencia online" icon={Globe}>
             <p>
-              Cuando una empresa no aparece con claridad en Google, pierde oportunidades. La base mínima es una web propia, una ficha de Google Business optimizada y una comunicación coherente.
+              Si no apareces en Google, no existes. Lo mínimo: una web propia y una ficha de Google Business bien hecha.
             </p>
-            <p className="text-ink-soft">Con esa estructura, la marca gana visibilidad, confianza y control sobre su primera impresión digital.</p>
+            <p className="text-ink-soft">Con eso ya estás por delante de la mayoría.</p>
           </Section>
 
           <Section title="WhatsApp como canal de ventas" icon={Smartphone}>
             <p>
-              WhatsApp es uno de los canales más cómodos para el cliente final. Reduce fricción, evita esperas y permite iniciar conversaciones comerciales de forma directa.
+              Es el canal más cómodo para tu cliente. Sin formularios, sin esperas: te escribe y vendes.
             </p>
             <p className="text-ink-soft">
-              Un botón visible en la web, Instagram y Google Business facilita el contacto. En LevelUp Design Co. se estructura el sistema completo de{" "}
+              Pon un botón visible en tu web, Instagram y Google. ¿Quieres el sistema completo? Así montamos{" "}
               <Link to="/conseguir-clientes-malaga" className="text-brand font-medium underline underline-offset-2 hover:no-underline">
                 web + WhatsApp en Málaga
               </Link>.
@@ -84,11 +79,11 @@ export default function ComoConseguirClientesPage() {
           <Section title="Consejos que sí funcionan" icon={Lightbulb}>
             <ul className="space-y-2.5">
               {[
-                "Responder con agilidad mejora la conversión de cada oportunidad.",
-                "Solicitar reseñas en Google refuerza la confianza y la prueba social.",
-                "Usar imágenes reales del trabajo transmite autenticidad y profesionalidad.",
-                "Comunicar con claridad ayuda a que el cliente entienda el valor antes de decidir.",
-                "Medir qué canales generan contactos permite invertir mejor en crecimiento.",
+                "Responde en menos de 1 hora. Es la diferencia entre vender o no.",
+                "Pide reseñas en Google a tus clientes contentos.",
+                "Usa fotos reales de tu trabajo, nunca de banco de imágenes.",
+                "Habla claro, sin tecnicismos. La gente compra cuando entiende.",
+                "Mide qué te trae clientes y dobla la apuesta ahí.",
               ].map((t) => (
                 <li key={t} className="flex gap-3">
                   <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand shrink-0" />
@@ -117,7 +112,7 @@ export default function ComoConseguirClientesPage() {
         <section className="mx-auto max-w-4xl px-5 py-14">
           <div className="rounded-2xl bg-brand text-brand-foreground p-8 md:p-12 text-center shadow-[0_20px_50px_-15px_rgba(123,30,43,0.4)]">
             <h2 className="font-serif text-2xl md:text-3xl max-w-2xl mx-auto leading-tight">
-              LevelUp Design Co. puede diseñar e implementar el sistema completo.
+              ¿Prefieres que lo montemos nosotros? Escríbenos por WhatsApp.
             </h2>
             <div className="mt-6 flex justify-center">
               <a
@@ -127,7 +122,7 @@ export default function ComoConseguirClientesPage() {
                 className="inline-flex items-center gap-2 bg-background text-brand px-6 py-3.5 rounded-md text-sm font-semibold shadow-lg transition-all hover:-translate-y-0.5"
               >
                 <MessageCircle className="h-4 w-4" />
-                Contáctame por WhatsApp
+                Escríbeme por WhatsApp
               </a>
             </div>
           </div>

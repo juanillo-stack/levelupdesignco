@@ -8,11 +8,11 @@ export function ProblemSolution() {
           </div>
 
           <h3 className="mt-4 font-serif text-3xl text-white leading-tight">
-            Muchas empresas tienen presencia online, pero pocas transmiten realmente confianza, claridad y una propuesta de valor reconocible.
+            Muchas marcas tienen presencia online, pero pocas transmiten realmente confianza, claridad y personalidad.
           </h3>
 
           <p className="mt-5 text-white/70 leading-relaxed text-sm md:text-base">
-            Una imagen digital poco trabajada genera dudas, reduce credibilidad y hace que muchas oportunidades comerciales pasen desapercibidas.
+            Una imagen poco cuidada genera dudas, reduce credibilidad y hace que muchas oportunidades pasen desapercibidas.
           </p>
         </div>
 
@@ -22,11 +22,11 @@ export function ProblemSolution() {
           </div>
 
           <h3 className="mt-4 font-serif text-3xl text-white leading-tight">
-            Desarrollamos sistemas digitales para que cada negocio se perciba sólido, profesional y coherente en todos sus puntos de contacto.
+            El estudio diseña sistemas digitales pensados para que cada negocio se vea sólido, profesional y coherente en todos los detalles.
           </h3>
 
           <p className="mt-5 text-white/70 leading-relaxed text-sm md:text-base">
-            Diseño, estructura, tecnología y comunicación alineados para que la presencia online transmita valor, confianza y diferenciación.
+            Diseño, estructura y comunicación alineados para que la presencia online transmita claridad, confianza y personalidad.
           </p>
         </div>
       </div>

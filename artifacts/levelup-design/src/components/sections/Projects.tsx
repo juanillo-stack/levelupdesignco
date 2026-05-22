@@ -1,7 +1,5 @@
 import { ProjectCard } from "@/components/ProjectCard";
-
-const homeLevelupInteriores =
-  "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80";
+import homeLevelupInteriores from "@/assets/home-levelupinteriores.png";
 
 interface Project {
   id: string;
@@ -17,7 +15,7 @@ const PROJECTS: Project[] = [
     id: "levelup-interiores",
     title: "LevelUp Interiores",
     description:
-      "Proyecto digital para una empresa especializada en reformas de cocinas, baños y reformas integrales en Málaga.",
+      "Empresa especializada en reformas de cocinas, baños y reformas integrales en Málaga.",
     image: homeLevelupInteriores,
     link: "https://levelup-interiores-fullstack.vercel.app",
     tags: ["Web profesional", "Diseño", "Málaga"],
@@ -60,7 +58,7 @@ export function Projects() {
       {PROJECTS.length === 1 && (
         <div className="mt-16 text-center">
           <p className="text-white/50 text-sm">
-            Nuevos proyectos digitales premium en desarrollo.
+            Más proyectos premium en proceso...
           </p>
         </div>
       )}

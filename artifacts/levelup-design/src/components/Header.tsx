@@ -24,7 +24,7 @@ export function Header() {
           <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="hidden sm:inline text-sm font-medium text-ink hover:text-brand transition-colors">
             Contáctame por WhatsApp
           </a>
-          <span className="hidden md:inline text-sm text-ink-soft">Estudio digital</span>
+          <span className="hidden md:inline text-sm text-ink-soft">Juan Leiva</span>
         </div>
       </div>
     </header>

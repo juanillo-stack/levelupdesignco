@@ -5,14 +5,14 @@ const cards = [
   {
     icon: Eye,
     title: "Claridad",
-    desc: "Una marca que transmite orden y confianza permite entender de inmediato su propuesta de valor y diferenciación.",
+    desc: "Una marca que transmite orden y confianza permite al cliente entender de inmediato su propuesta de valor y diferenciación.",
     cta: "Transmitir confianza",
     to: "/pagina-web-malaga" as const,
   },
   {
     icon: Fingerprint,
     title: "Identidad",
-    desc: "Cada proyecto se desarrolla sin plantillas genéricas para reflejar personalidad, intención e imagen de marca coherente.",
+    desc: "Cada proyecto se desarrolla sin plantillas genéricas. El resultado refleja la personalidad, la intención y una imagen de marca coherente.",
     cta: "Crear identidad",
     to: "/pagina-web-malaga" as const,
   },
@@ -35,11 +35,11 @@ export function HowWeHelp() {
           </div>
 
           <h2 className="mt-1.5 font-serif text-3xl text-white">
-            La presencia online habla antes que cualquier argumento comercial
+            La presencia online habla antes que cualquier argumento
           </h2>
 
           <p className="mt-4 text-base text-white/70 max-w-xl leading-relaxed">
-            La forma en que una empresa se presenta digitalmente determina cómo la perciben sus clientes potenciales, socios y oportunidades futuras.
+            La forma en que un negocio se presenta digitalmente determina directamente cómo lo perciben sus clientes potenciales.
           </p>
         </div>
 

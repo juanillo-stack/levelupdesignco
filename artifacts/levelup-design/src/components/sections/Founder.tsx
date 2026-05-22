@@ -22,13 +22,13 @@ export function Founder() {
               Quiénes somos
             </div>
             <h2 className="mt-3 font-serif text-3xl md:text-[2.35rem] leading-tight text-white">
-              Un estudio digital para negocios que necesitan avanzar
+              Un estudio que trabaja directamente con cada cliente
             </h2>
             <p className="mt-6 text-base md:text-lg leading-relaxed text-white/72 font-sans">
-              LevelUp Design Co. desarrolla webs profesionales, automatizaciones y sistemas digitales para empresas que buscan una presencia online moderna, clara y preparada para crecer.
+              LevelUp Design Co. diseña y desarrolla webs para negocios y marcas personales que quieren una presencia profesional y auténtica.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-white/55 max-w-md">
-              Cada proyecto combina estrategia visual, desarrollo web, optimización de procesos y branding digital para convertir la identidad de cada negocio en una experiencia sólida y coherente.
+              Cada proyecto se trabaja de forma directa, combinando diseño, desarrollo y visión real de negocio.
             </p>
           </ScrollReveal>
         </div>

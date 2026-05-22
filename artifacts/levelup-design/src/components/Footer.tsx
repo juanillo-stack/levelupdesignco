@@ -12,13 +12,13 @@ import { Link } from "wouter";
 export function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-white">
-      <div className="mx-auto max-w-6xl px-5 py-8 text-slate-700">
-        <div className="grid gap-8 text-sm md:grid-cols-[1.2fr_1fr_1fr_auto] md:items-start">
+      <div className="mx-auto max-w-6xl px-5 py-6 text-slate-700">
+        <div className="grid gap-6 text-sm md:grid-cols-[1.2fr_1fr_1fr_auto] md:items-start">
           <div className="space-y-3">
             <p className="text-xs uppercase tracking-[0.32em] text-slate-500">
               Contacto
             </p>
-            <div className="space-y-2">
+            <div className="flex flex-col items-start gap-2">
               <a
                 href="tel:606899991"
                 className="inline-flex items-center gap-3 text-slate-700 transition hover:text-slate-900"
@@ -49,7 +49,7 @@ export function Footer() {
             <p className="text-xs uppercase tracking-[0.32em] text-slate-500">
               Social
             </p>
-            <div className="space-y-2">
+            <div className="flex flex-col items-start gap-2">
               <a
                 href="https://linkedin.com/company/levelupdesignco"
                 target="_blank"
@@ -84,7 +84,7 @@ export function Footer() {
             <p className="text-xs uppercase tracking-[0.32em] text-slate-500">
               Legal
             </p>
-            <div className="flex flex-col gap-2 text-slate-600">
+            <div className="flex flex-col items-start gap-2 text-slate-600">
               <Link to="/privacidad" className="transition hover:text-slate-900">
                 Política de privacidad
               </Link>
@@ -106,10 +106,7 @@ export function Footer() {
               <ArrowUp className="h-4 w-4 text-slate-500" />
             </a>
             <p className="text-slate-500" translate="no">
-              © 2026 LevelUp Design Co.
-            </p>
-            <p className="max-w-[13rem] text-xs leading-relaxed text-slate-400">
-              Estudio digital de diseño web, automatización y branding para empresas.
+              © 2025 LevelUp Design Co.
             </p>
           </div>
         </div>

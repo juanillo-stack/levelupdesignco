@@ -9,15 +9,15 @@ const WHATSAPP = "https://wa.me/34606899991";
 export const Route = createFileRoute("/trabajos")({
   head: () => ({
     meta: [
-      { title: "Trabajos de diseño web y digitalización | LevelUp Design Co." },
+      { title: "Nuestros trabajos — LevelUp Design Co." },
       {
         name: "description",
         content:
-          "Proyectos de diseño web profesional, presencia online, branding digital y optimización desarrollados por LevelUp Design Co.",
+          "Proyectos reales: web profesional, diseño y optimización digital. LevelUp Interiores en Málaga.",
       },
       {
         property: "og:title",
-        content: "Trabajos de diseño web y digitalización | LevelUp Design Co.",
+        content: "Nuestros trabajos — LevelUp Design Co.",
       },
       {
         property: "og:description",
@@ -54,7 +54,7 @@ function TrabajosPage() {
             className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-lg text-sm font-medium transition-all hover:shadow-[0_12px_32px_rgba(123,30,43,0.3)] hover:scale-105"
           >
             <MessageCircle className="h-4 w-4" />
-            Contáctame por WhatsApp
+            Quiero un proyecto así
           </a>
         </div>
       </main>

@@ -9,27 +9,20 @@ import { Founder } from "@/components/sections/Founder";
 import { LifestyleBand } from "@/components/sections/LifestyleBand";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { SEO } from "@/components/SEO";
-
-const studioBackground =
-  "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80";
+import lifestyleWalking from "@/assets/lifestyle-walking.png";
 
 const workspaceBackground =
-  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80";
+  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80";
 
 export default function IndexPage() {
   return (
     <div id="top" className="min-h-screen bg-background">
-      <SEO
-        title="LevelUp Design Co. | Diseño web, automatización y presencia online"
-        description="Estudio digital especializado en diseño web profesional, automatización, branding digital y optimización de negocios para empresas que quieren crecer online."
-      />
       <Header />
       <main className="pt-16">
         <section
           className="relative overflow-hidden bg-cover bg-center"
           style={{
-            backgroundImage: `url(${studioBackground})`,
+            backgroundImage: `url(${lifestyleWalking})`,
             backgroundPosition: "center top",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
