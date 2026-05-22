@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { MessageCircle } from "lucide-react";
-import { site, whatsappLinks } from "@/lib/site";
+import { publicPath, site, whatsappLinks } from "@/lib/site";
 
 export function Header() {
   return (
@@ -11,7 +11,7 @@ export function Header() {
           <span className="font-sans text-sm font-medium tracking-wide text-white/60 transition-colors group-hover:text-white/80" translate="no">Design Co.</span>
         </Link>
         <nav aria-label="Navegación principal" className="hidden items-center gap-6 md:flex">
-          <a href="/#servicios" className="text-sm font-medium text-white/65 transition-colors hover:text-white">
+          <a href={publicPath("/#servicios")} className="text-sm font-medium text-white/65 transition-colors hover:text-white">
             Servicios
           </a>
           <Link to="/trabajos" className="text-sm font-medium text-white/65 transition-colors hover:text-white">

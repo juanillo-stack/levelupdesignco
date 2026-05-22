@@ -47,3 +47,10 @@ export function absoluteUrl(path = "/") {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
   return `${site.url}${normalizedPath}`;
 }
+
+export function publicPath(path = "/") {
+  const normalizedBase = import.meta.env.BASE_URL.replace(/\/$/, "");
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+
+  return `${normalizedBase}${normalizedPath}`;
+}
