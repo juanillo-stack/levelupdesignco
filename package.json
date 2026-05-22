@@ -2,9 +2,12 @@
   "name": "workspace",
   "version": "0.0.0",
   "license": "MIT",
+  "packageManager": "pnpm@10.33.3",
   "scripts": {
-    "dev": "cd artifacts/levelup-design && BASE_PATH=/ PORT=8080 bun run dev",
-    "build": "cd artifacts/levelup-design && BASE_PATH=/ PORT=8080 bun run build && cd ../.. && rm -rf dist && cp -r artifacts/levelup-design/dist/public dist"
+    "dev": "BASE_PATH=${BASE_PATH:-/} PORT=${PORT:-8080} pnpm --filter @workspace/levelup-design run dev",
+    "build": "node ./scripts/build-static-site.mjs",
+    "build:pages": "DEPLOY_TARGET=github-pages node ./scripts/build-static-site.mjs",
+    "build:vercel": "DEPLOY_TARGET=vercel node ./scripts/build-static-site.mjs"
   },
   "private": true,
   "devDependencies": {
