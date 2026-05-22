@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { MessageCircle, Smartphone, Layout, MousePointerClick, ShieldCheck, Users, TrendingUp, ArrowRight } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 
 const WHATSAPP = "https://wa.me/34606899991";
 
@@ -22,6 +23,7 @@ function WhatsAppButton({ label = "Necesito una web" }: { label?: string }) {
 export default function PaginaWebMalagaPage() {
   return (
     <div id="top" className="min-h-screen bg-background">
+      <SEO description="Diseño web y branding en Málaga para negocios que necesitan una web profesional, SEO local y automatización conectada a WhatsApp." />
       <Header />
       <main className="pt-16">
         {/* Hero */}

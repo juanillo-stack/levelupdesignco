@@ -6,8 +6,7 @@ export default function AvisoLegalPage() {
   return (
     <div id="top" className="min-h-screen bg-slate-950">
       <SEO
-        title="Aviso legal | LevelUp Design Co."
-        description="Aviso legal de LevelUp Design Co. con información del titular, condiciones de uso, propiedad intelectual y responsabilidades."
+        description="Aviso legal de LevelUp Design Co., estudio de diseño web y branding en Málaga especializado en SEO y automatización."
       />
       <Header />
       <main className="pt-16">

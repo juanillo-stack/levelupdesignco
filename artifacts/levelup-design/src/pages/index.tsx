@@ -9,6 +9,7 @@ import { Founder } from "@/components/sections/Founder";
 import { LifestyleBand } from "@/components/sections/LifestyleBand";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import lifestyleWalking from "@/assets/lifestyle-walking.png";
 
 const workspaceBackground =
@@ -17,6 +18,7 @@ const workspaceBackground =
 export default function IndexPage() {
   return (
     <div id="top" className="min-h-screen bg-background">
+      <SEO description="LevelUp Design Co. crea diseño web y branding en Málaga con SEO y automatización para negocios que necesitan una presencia digital premium." />
       <Header />
       <main className="pt-16">
         <section

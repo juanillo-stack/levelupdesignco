@@ -9,10 +9,10 @@ const WHATSAPP = "https://wa.me/34606899991";
 export const Route = createFileRoute("/como-conseguir-clientes-negocio")({
   head: () => ({
     meta: [
-      { title: "Cómo conseguir clientes para tu negocio — Guía práctica" },
-      { name: "description", content: "Lo que de verdad funciona hoy para conseguir clientes: presencia online, web que convierte y WhatsApp como canal directo." },
-      { property: "og:title", content: "Cómo conseguir clientes para tu negocio" },
-      { property: "og:description", content: "Ideas claras y aplicables, sin teoría." },
+      { title: "LevelUp Design Co." },
+      { name: "description", content: "Guía de LevelUp Design Co. sobre diseño web, branding, SEO y automatización para conseguir clientes en Málaga." },
+      { property: "og:title", content: "LevelUp Design Co." },
+      { property: "og:description", content: "Diseño web y branding en Málaga, SEO y automatización para negocios." },
     ],
   }),
   component: Page,

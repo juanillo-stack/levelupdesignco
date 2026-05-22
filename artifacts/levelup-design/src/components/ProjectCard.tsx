@@ -21,11 +21,11 @@ export function ProjectCard({
       className="group relative flex flex-col h-full overflow-hidden rounded-3xl border border-white/8 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm transition-all duration-500 hover:border-brand/50 hover:shadow-[0_24px_48px_rgba(123,30,43,0.15)]"
     >
       {/* Imagen */}
-      <div className="relative h-72 md:h-80 w-full overflow-hidden bg-slate-900">
+      <div className="relative h-72 md:h-80 w-full overflow-hidden bg-slate-950">
         <img
           src={image}
           alt={title}
-          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          className="h-full w-full object-contain p-3 transition-transform duration-700 group-hover:scale-[1.03]"
         />
         {/* Overlay gradiente */}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />

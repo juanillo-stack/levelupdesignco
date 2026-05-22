@@ -30,15 +30,16 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "LevelUp Design Co." },
-      { name: "description", content: "Diseño web moderno y experiencias digitales." },
-      { name: "author", content: "Lovable" },
+      { name: "description", content: "LevelUp Design Co. | Diseño web y branding en Málaga, SEO y automatización para negocios que necesitan una presencia digital profesional." },
+      { name: "keywords", content: "LevelUp Design Co., diseño web y branding en Málaga, SEO, automatización, diseño web Málaga, branding Málaga" },
+      { name: "author", content: "LevelUp Design Co." },
       { property: "og:title", content: "LevelUp Design Co." },
-      { property: "og:description", content: "Diseño web moderno y experiencias digitales." },
+      { property: "og:description", content: "Diseño web y branding en Málaga, SEO y automatización para negocios." },
+      { property: "og:site_name", content: "LevelUp Design Co." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "LevelUp Design Co." },
-      { name: "twitter:description", content: "Diseño web moderno y experiencias digitales." },
+      { name: "twitter:description", content: "Diseño web y branding en Málaga, SEO y automatización para negocios." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/G6nj9mdDesTN3r7B2Yg2ZkxIREg1/social-images/social-1778342331583-logo-gris-levelupdesign.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/G6nj9mdDesTN3r7B2Yg2ZkxIREg1/social-images/social-1778342331583-logo-gris-levelupdesign.webp" },
     ],
@@ -46,6 +47,11 @@ export const Route = createRootRoute({
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      {
+        rel: "icon",
+        type: "image/svg+xml",
+        href: "/favicon.svg",
       },
     ],
   }),
@@ -56,7 +62,7 @@ export const Route = createRootRoute({
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="es" translate="no">
       <head>
         <HeadContent />
       </head>

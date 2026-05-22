@@ -9,10 +9,10 @@ const WHATSAPP = "https://wa.me/34606899991";
 export const Route = createFileRoute("/pagina-web-malaga")({
   head: () => ({
     meta: [
-      { title: "Crear página web en Málaga — LevelUp Design Co." },
-      { name: "description", content: "Páginas web profesionales en Málaga. Simples, rápidas y pensadas para convertir visitas en clientes." },
-      { property: "og:title", content: "Página web profesional en Málaga" },
-      { property: "og:description", content: "Una web que vende. No solo una web bonita." },
+      { title: "LevelUp Design Co." },
+      { name: "description", content: "Diseño web y branding en Málaga para negocios que necesitan una web profesional, SEO local y automatización conectada a WhatsApp." },
+      { property: "og:title", content: "LevelUp Design Co." },
+      { property: "og:description", content: "Diseño web y branding en Málaga, SEO y automatización para negocios." },
     ],
   }),
   component: Page,

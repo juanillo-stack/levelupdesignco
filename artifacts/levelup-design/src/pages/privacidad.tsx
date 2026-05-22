@@ -6,8 +6,7 @@ export default function PrivacidadPage() {
   return (
     <div id="top" className="min-h-screen bg-slate-950">
       <SEO
-        title="Política de privacidad | LevelUp Design Co."
-        description="Política de privacidad de LevelUp Design Co. adaptada al RGPD y a la normativa española de protección de datos."
+        description="Política de privacidad de LevelUp Design Co., estudio de diseño web y branding en Málaga con servicios de SEO y automatización."
       />
       <Header />
       <main className="pt-16">
