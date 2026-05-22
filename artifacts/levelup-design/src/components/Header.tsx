@@ -16,7 +16,7 @@ export function Header() {
         <div className="flex items-center gap-3 sm:gap-4">
           <nav
             aria-label="Navegación principal"
-            className="hidden md:flex items-center gap-5 pr-1 text-sm font-medium text-ink-soft"
+            className="hidden min-[380px]:flex items-center gap-3 pr-1 text-xs font-medium text-ink-soft md:gap-5 md:text-sm"
           >
             <a href={servicesHref} className="transition-colors hover:text-brand">
               Servicios
