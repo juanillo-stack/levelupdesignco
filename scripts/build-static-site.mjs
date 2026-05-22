@@ -247,6 +247,24 @@ async function getBuildOutputDir(appDir) {
   );
 }
 
+async function updateHtmlShell(filePath, siteUrl) {
+  const canonicalUrl = `${siteUrl}/`;
+  const html = await readFile(filePath, "utf8");
+  let updated = html.replace(
+    /<link rel="canonical" href="[^"]*" \/>/,
+    `<link rel="canonical" href="${canonicalUrl}" />`,
+  );
+
+  if (!updated.includes('property="og:url"')) {
+    updated = updated.replace(
+      /(<meta property="og:site_name" content="[^"]*" \/>)/,
+      `$1\n    <meta property="og:url" content="${canonicalUrl}" />`,
+    );
+  }
+
+  await writeFile(filePath, updated);
+}
+
 async function main() {
   const target = process.env.DEPLOY_TARGET ?? "static";
   const app = await detectDeployableViteApp();
@@ -287,6 +305,7 @@ async function main() {
 
   await rm(rootDistDir, { recursive: true, force: true });
   await cp(outputDir, rootDistDir, { recursive: true });
+  await updateHtmlShell(path.join(rootDistDir, "index.html"), siteUrl);
   await copyFile(
     path.join(rootDistDir, "index.html"),
     path.join(rootDistDir, "404.html"),
