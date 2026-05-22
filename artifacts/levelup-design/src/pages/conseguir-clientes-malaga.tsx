@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { MessageCircle, CheckCircle2, TrendingUp, Clock, Users, Search, Wrench, Phone, ArrowRight } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 
 const WHATSAPP = "https://wa.me/34606899991";
 
@@ -22,6 +23,7 @@ function WhatsAppButton({ label = "Quiero más clientes" }: { label?: string }) 
 export default function ConseguirClientesMalagaPage() {
   return (
     <div id="top" className="min-h-screen bg-background">
+      <SEO description="LevelUp Design Co. combina diseño web y branding en Málaga con SEO y automatización para ayudar a negocios a conseguir clientes." />
       <Header />
       <main className="pt-16">
         {/* Hero */}

@@ -108,6 +108,9 @@ export function Footer() {
             <p className="text-slate-500" translate="no">
               © 2025 LevelUp Design Co.
             </p>
+            <p className="max-w-64 text-left text-xs leading-relaxed text-slate-500 md:text-right">
+              Diseño web, branding, SEO y automatización para negocios.
+            </p>
           </div>
         </div>
       </div>

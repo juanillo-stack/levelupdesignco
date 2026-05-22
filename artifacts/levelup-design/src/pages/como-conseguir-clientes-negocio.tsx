@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { MessageCircle, Globe, Smartphone, Lightbulb, ArrowRight } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 
 const WHATSAPP = "https://wa.me/34606899991";
 
@@ -36,6 +37,7 @@ function Section({ title, icon: Icon, children }: { title: string; icon: React.E
 export default function ComoConseguirClientesPage() {
   return (
     <div id="top" className="min-h-screen bg-background">
+      <SEO description="Guía de LevelUp Design Co. sobre diseño web, branding, SEO y automatización para conseguir clientes en Málaga." />
       <Header />
       <main className="pt-16">
         {/* Hero */}

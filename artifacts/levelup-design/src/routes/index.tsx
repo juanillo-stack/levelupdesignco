@@ -19,23 +19,22 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title:
-          "LevelUp Design Co. — Desarrollo Web & Optimización de Empresas",
+        title: "LevelUp Design Co.",
       },
       {
         name: "description",
         content:
-          "Web, automatización, Google Business y presencia digital.",
+          "LevelUp Design Co. crea diseño web y branding en Málaga con SEO y automatización para negocios que necesitan una presencia digital premium.",
       },
       {
         property: "og:title",
         content:
-          "LevelUp Design Co. — Desarrollo Web & Optimización de Empresas",
+          "LevelUp Design Co.",
       },
       {
         property: "og:description",
         content:
-          "Web, automatización, Google Business y presencia digital.",
+          "Diseño web y branding en Málaga, SEO y automatización para negocios.",
       },
     ],
   }),

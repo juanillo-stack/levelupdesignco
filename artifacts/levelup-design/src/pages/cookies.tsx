@@ -6,8 +6,7 @@ export default function CookiesPage() {
   return (
     <div id="top" className="min-h-screen bg-slate-950">
       <SEO
-        title="Política de cookies | LevelUp Design Co."
-        description="Información sobre el uso de cookies técnicas, terceros y gestión de preferencias en LevelUp Design Co."
+        description="Política de cookies de LevelUp Design Co., diseño web y branding en Málaga con SEO y automatización para negocios."
       />
       <Header />
       <main className="pt-16">

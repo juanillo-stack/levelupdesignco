@@ -4,6 +4,8 @@ import { MessageCircle } from "lucide-react";
 const WHATSAPP = "https://wa.me/34606899991";
 
 export function Header() {
+  const servicesHref = `${import.meta.env.BASE_URL}#servicios`;
+
   return (
     <header className="fixed top-0 inset-x-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto max-w-6xl px-5 h-16 flex items-center justify-between">
@@ -11,7 +13,18 @@ export function Header() {
           <span className="font-serif text-xl font-semibold text-brand" translate="no">LevelUp</span>
           <span className="font-sans text-sm font-medium tracking-wide text-ink-soft" translate="no">Design Co.</span>
         </Link>
-        <div className="flex items-center gap-3 sm:gap-5">
+        <div className="flex items-center gap-3 sm:gap-4">
+          <nav
+            aria-label="Navegación principal"
+            className="hidden md:flex items-center gap-5 pr-1 text-sm font-medium text-ink-soft"
+          >
+            <a href={servicesHref} className="transition-colors hover:text-brand">
+              Servicios
+            </a>
+            <Link to="/trabajos" className="transition-colors hover:text-brand">
+              Trabajos
+            </Link>
+          </nav>
           <a
             href={WHATSAPP}
             target="_blank"
@@ -22,9 +35,8 @@ export function Header() {
             <MessageCircle className="h-4 w-4" />
           </a>
           <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="hidden sm:inline text-sm font-medium text-ink hover:text-brand transition-colors">
-            Contáctame por WhatsApp
+            Solicitar presupuesto
           </a>
-          <span className="hidden md:inline text-sm text-ink-soft">Juan Leiva</span>
         </div>
       </div>
     </header>
