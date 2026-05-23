@@ -10,11 +10,10 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { site } from "@/lib/site";
+import heroOffice from "@/assets/hero-office.jpg";
 
-const heroBackground =
-  "https://images.unsplash.com/photo-1524758635134-b5812cffca5d?auto=format&fit=crop&w=1600&q=75";
 const sectionBackground =
-  "https://images.unsplash.com/photo-1618005182384-a81586365c64?auto=format&fit=crop&w=1600&q=75";
+  "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&w=1600&q=75";
 const workspaceBackground =
   "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&w=1600&q=75";
 
@@ -29,19 +28,20 @@ export default function IndexPage() {
       <Header />
       <main className="pt-16">
         <section
-          className="relative overflow-hidden bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url(${heroBackground})`,
-            backgroundPosition: "center 30%",
-            backgroundSize: "cover",
-          }}
+          className="relative overflow-hidden"
           aria-label="Portada y quiénes somos de LevelUp Design Co."
         >
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(123,30,43,0.16),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(15,23,42,0.5),transparent_35%)]" />
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/68 to-slate-950/92" />
+          <img
+            src={heroOffice}
+            alt=""
+            aria-hidden
+            className="pointer-events-none absolute inset-0 h-full w-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(123,30,43,0.12),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(15,23,42,0.35),transparent_40%)]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/55 to-slate-950/88" />
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-[45%] bg-gradient-to-t from-slate-950 via-slate-950/75 to-transparent"
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent"
           />
           <div className="relative z-10">
             <Hero />
