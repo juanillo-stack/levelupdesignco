@@ -108,15 +108,24 @@ export function Footer() {
             </div>
           </FooterColumn>
 
-          <FooterColumn label="Aviso legal">
-            <div className="flex flex-col items-start gap-2 text-sm text-white/60">
-              <Link to="/aviso-legal" className="transition hover:text-white">
+          <FooterColumn label="Aviso legal" shrink={false} className="min-w-[11.5rem]">
+            <div className="flex flex-col items-start gap-2">
+              <Link
+                to="/aviso-legal"
+                className="inline-flex w-full items-center text-sm leading-snug text-white/60 transition hover:text-white"
+              >
                 Aviso legal
               </Link>
-              <Link to="/privacidad" className="transition hover:text-white">
+              <Link
+                to="/privacidad"
+                className="inline-flex w-full items-center text-sm leading-snug text-white/60 transition hover:text-white"
+              >
                 Política de privacidad
               </Link>
-              <Link to="/cookies" className="transition hover:text-white">
+              <Link
+                to="/cookies"
+                className="inline-flex w-full items-center text-sm leading-snug text-white/60 transition hover:text-white"
+              >
                 Política de cookies
               </Link>
             </div>

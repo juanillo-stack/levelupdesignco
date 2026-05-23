@@ -11,7 +11,9 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { site } from "@/lib/site";
 
-const lifestyleBackground =
+const heroBackground =
+  "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=75";
+const sectionBackground =
   "https://images.unsplash.com/photo-1618005182384-a81586365c64?auto=format&fit=crop&w=1600&q=75";
 const workspaceBackground =
   "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&w=1600&q=75";
@@ -29,12 +31,32 @@ export default function IndexPage() {
         <section
           className="relative overflow-hidden bg-cover bg-center"
           style={{
-            backgroundImage: `url(${lifestyleBackground})`,
+            backgroundImage: `url(${heroBackground})`,
             backgroundPosition: "center 35%",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
-          aria-label="Servicios digitales premium de LevelUp Design Co."
+          aria-label="Portada de LevelUp Design Co."
+        >
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(123,30,43,0.16),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(15,23,42,0.5),transparent_35%)]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/45 via-slate-950/72 to-slate-950/94" />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-[35%] bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent"
+          />
+          <div className="relative z-10">
+            <Hero />
+          </div>
+        </section>
+
+        <section
+          className="relative overflow-hidden bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${sectionBackground})`,
+            backgroundPosition: "center 35%",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
         >
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(123,30,43,0.18),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(123,30,43,0.1),transparent_24%)]" />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/55 via-slate-950/78 to-slate-950/96" />
@@ -43,7 +65,6 @@ export default function IndexPage() {
             className="pointer-events-none absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-slate-950/95 via-slate-950/65 to-transparent"
           />
           <div className="relative z-10">
-            <Hero />
             <Founder />
             <HowIWork />
           </div>
