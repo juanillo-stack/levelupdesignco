@@ -47,3 +47,18 @@ export function absoluteUrl(path = "/") {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
   return `${site.url}${normalizedPath}`;
 }
+
+/** Base path del router (ej. "" en Vercel, "/levelupdesignco" en GitHub Pages). */
+export const routerBase = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+/** Ruta interna respetando el base path de GitHub Pages / Vercel. */
+export function appPath(path: string) {
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return routerBase ? `${routerBase}${normalized}` : normalized;
+}
+
+/** Ancla en la home (/#servicios) con base path correcto. */
+export function homeSection(hash: string) {
+  const id = hash.replace(/^#/, "");
+  return routerBase ? `${routerBase}/#${id}` : `/#${id}`;
+}

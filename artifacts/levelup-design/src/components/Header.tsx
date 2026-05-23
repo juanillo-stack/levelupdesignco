@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { MessageCircle } from "lucide-react";
-import { site, whatsappLinks } from "@/lib/site";
+import { homeSection, site, whatsappLinks } from "@/lib/site";
 
 export function Header() {
   return (
@@ -27,7 +27,7 @@ export function Header() {
             className="hidden items-center gap-5 md:flex lg:gap-6"
           >
             <a
-              href="/#servicios"
+              href={homeSection("servicios")}
               className="text-sm font-medium text-white/65 transition-colors hover:text-white"
             >
               Servicios
