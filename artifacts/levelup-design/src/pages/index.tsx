@@ -29,32 +29,31 @@ export default function IndexPage() {
       <Header />
       <main className="pt-16">
         <section
-          className="relative overflow-hidden bg-cover bg-center"
+          className="relative overflow-hidden bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${heroBackground})`,
-            backgroundPosition: "center 35%",
-            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center 30%",
             backgroundSize: "cover",
           }}
-          aria-label="Portada de LevelUp Design Co."
+          aria-label="Portada y quiénes somos de LevelUp Design Co."
         >
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(123,30,43,0.16),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(15,23,42,0.5),transparent_35%)]" />
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/45 via-slate-950/72 to-slate-950/94" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/68 to-slate-950/92" />
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-[35%] bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent"
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-[45%] bg-gradient-to-t from-slate-950 via-slate-950/75 to-transparent"
           />
           <div className="relative z-10">
             <Hero />
+            <Founder />
           </div>
         </section>
 
         <section
-          className="relative overflow-hidden bg-cover bg-center"
+          className="relative overflow-hidden bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${sectionBackground})`,
             backgroundPosition: "center 35%",
-            backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
         >
@@ -65,17 +64,15 @@ export default function IndexPage() {
             className="pointer-events-none absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-slate-950/95 via-slate-950/65 to-transparent"
           />
           <div className="relative z-10">
-            <Founder />
             <HowIWork />
           </div>
         </section>
 
         <section
-          className="relative overflow-hidden bg-cover bg-center"
+          className="relative overflow-hidden bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${workspaceBackground})`,
             backgroundPosition: "center 30%",
-            backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
         >

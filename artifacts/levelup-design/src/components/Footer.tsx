@@ -35,6 +35,16 @@ function FooterColumn({
   );
 }
 
+function FooterTextLink({ to, children }: { to: string; children: ReactNode }) {
+  return (
+    <Link
+      to={to}
+      className="block text-sm leading-none text-white/65 transition hover:text-white whitespace-nowrap"
+    >
+      {children}
+    </Link>
+  );
+}
 function FooterRow({
   icon: Icon,
   href,
@@ -131,9 +141,9 @@ export function Footer() {
 
           <FooterColumn label="Legal">
             <div className="flex flex-col gap-2">
-              <FooterRow to="/aviso-legal">Aviso legal</FooterRow>
-              <FooterRow to="/privacidad">Política de privacidad</FooterRow>
-              <FooterRow to="/cookies">Política de cookies</FooterRow>
+              <FooterTextLink to="/aviso-legal">Aviso legal</FooterTextLink>
+              <FooterTextLink to="/privacidad">Política de privacidad</FooterTextLink>
+              <FooterTextLink to="/cookies">Política de cookies</FooterTextLink>
             </div>
           </FooterColumn>
 
