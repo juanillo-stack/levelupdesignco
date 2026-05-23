@@ -22,13 +22,21 @@ function FooterColumn({
   label,
   className,
   children,
+  shrink = true,
 }: {
   label: string;
   className?: string;
   children: ReactNode;
+  shrink?: boolean;
 }) {
   return (
-    <div className={cn("flex min-w-0 flex-col gap-2.5", className)}>
+    <div
+      className={cn(
+        "flex flex-col gap-2.5",
+        shrink ? "min-w-0" : "shrink-0",
+        className,
+      )}
+    >
       <p className="text-xs uppercase tracking-[0.28em] text-white/35">{label}</p>
       {children}
     </div>
@@ -41,7 +49,7 @@ export function Footer() {
   return (
     <footer className="border-t border-white/10 bg-slate-950 text-white">
       <div className="mx-auto max-w-6xl px-5 py-8 md:py-10">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)_minmax(0,0.85fr)_minmax(0,0.85fr)_auto] lg:items-start lg:gap-x-6 xl:gap-x-10">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[minmax(0,1fr)_max-content_max-content_max-content_auto] lg:items-start lg:gap-x-8 xl:gap-x-12">
           <div className="min-w-0 lg:col-span-1">
             <p className="font-serif text-xl text-white md:text-2xl" translate="no">
               LevelUp <span className="text-brand">Design Co.</span>
@@ -51,21 +59,21 @@ export function Footer() {
             </p>
           </div>
 
-          <FooterColumn label="Contacto" className="lg:pl-6 xl:pl-10">
+          <FooterColumn label="Contacto" shrink={false} className="lg:pl-4 xl:pl-8">
             <div className="flex flex-col items-start gap-2">
               <a
                 href={`tel:${site.phoneHref}`}
-                className="inline-flex max-w-full items-center gap-2.5 text-sm text-white/65 transition hover:text-white"
+                className="inline-flex w-max items-center gap-2.5 text-sm text-white/65 transition hover:text-white"
               >
                 <Phone className="h-3.5 w-3.5 shrink-0 text-brand" />
-                <span className="truncate">{site.phoneDisplay}</span>
+                <span className="whitespace-nowrap">{site.phoneDisplay}</span>
               </a>
               <a
                 href={`mailto:${site.email}`}
-                className="inline-flex max-w-full items-start gap-2.5 text-sm text-white/65 transition hover:text-white"
+                className="inline-flex w-max max-w-none items-center gap-2.5 text-sm text-white/65 transition hover:text-white"
               >
-                <Mail className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand" />
-                <span className="break-all leading-snug">{site.email}</span>
+                <Mail className="h-3.5 w-3.5 shrink-0 text-brand" />
+                <span className="whitespace-nowrap">{site.email}</span>
               </a>
               <a
                 href="https://goo.gl/maps/4pYj5BqQYFy"

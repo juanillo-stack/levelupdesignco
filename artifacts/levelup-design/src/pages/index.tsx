@@ -12,9 +12,9 @@ import { SEO } from "@/components/SEO";
 import { site } from "@/lib/site";
 
 const lifestyleBackground =
-  "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=75";
+  "https://images.unsplash.com/photo-1618005182384-a81586365c64?auto=format&fit=crop&w=1600&q=75";
 const workspaceBackground =
-  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=72";
+  "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&w=1600&q=75";
 
 export default function IndexPage() {
   return (
@@ -36,8 +36,8 @@ export default function IndexPage() {
           }}
           aria-label="Servicios digitales premium de LevelUp Design Co."
         >
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,160,90,0.12),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(255,120,60,0.08),transparent_22%)]" />
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/35 to-slate-950/90" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(123,30,43,0.18),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(123,30,43,0.1),transparent_24%)]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/55 via-slate-950/78 to-slate-950/96" />
           <div
             aria-hidden="true"
             className="pointer-events-none absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-slate-950/95 via-slate-950/65 to-transparent"
@@ -58,9 +58,9 @@ export default function IndexPage() {
             backgroundSize: "cover",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-950/95 via-slate-950/75 to-slate-950/98" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,160,90,0.08),transparent_18%),radial-gradient(circle_at_bottom_left,rgba(255,120,60,0.06),transparent_22%)]" />
-          <div className="absolute inset-0 bg-black/25" />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-950/92 via-slate-950/82 to-slate-950/98" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(123,30,43,0.14),transparent_20%),radial-gradient(circle_at_bottom_left,rgba(123,30,43,0.08),transparent_24%)]" />
+          <div className="absolute inset-0 bg-black/35" />
           <div className="relative z-10">
             <HowWeHelp />
             <ProblemSolution />

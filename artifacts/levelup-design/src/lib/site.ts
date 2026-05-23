@@ -5,7 +5,7 @@ export const site = {
   vat: "[NIF/CIF pendiente de completar]",
   fiscalAddress: "[Dirección fiscal pendiente de completar]",
   location: "Málaga, España",
-  email: "contacto@levelupdesign.com",
+  email: "juanleiva@levelupdesign.es",
   phoneDisplay: "+34 606 899 991",
   phoneHref: "+34606899991",
   url: (import.meta.env.VITE_SITE_URL ?? "https://levelupdesign.com").replace(
