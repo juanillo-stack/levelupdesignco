@@ -20,7 +20,7 @@ export function ProjectCard({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex flex-col h-full overflow-hidden rounded-3xl border border-white/8 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm transition-all duration-500 hover:border-brand/50 hover:shadow-[0_24px_48px_rgba(123,30,43,0.15)]"
+      className="group relative flex flex-col h-full overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.07] to-white/[0.02] backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-brand/45 hover:shadow-[0_28px_56px_rgba(123,30,43,0.22),0_0_0_1px_rgba(123,30,43,0.08)]"
     >
       {/* Imagen */}
       <div className="relative h-72 md:h-80 w-full overflow-hidden bg-slate-900">
@@ -29,7 +29,7 @@ export function ProjectCard({
           alt={imageAlt ?? `${title} - proyecto de diseño web realizado por LevelUp Design Co.`}
           loading="lazy"
           decoding="async"
-          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
         />
         {/* Overlay gradiente */}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />

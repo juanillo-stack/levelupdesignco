@@ -8,10 +8,10 @@ import { whatsappLinks } from "@/lib/site";
 
 export default function TrabajosPage() {
   return (
-    <div id="top" className="min-h-screen bg-background">
+    <div id="top" className="min-h-screen bg-slate-950">
       <SEO
         title="Trabajos de diseño web y branding | LevelUp Design Co."
-        description="Proyectos digitales realizados por LevelUp Design Co.: diseño web profesional, presencia online y optimización para negocios reales."
+        description="Proyectos reales de LevelUp Design Co.: Carlos Scalera, Judith y LevelUp Interiores. Diseño web profesional y presencia digital premium."
         path="/trabajos"
       />
       <Header />
