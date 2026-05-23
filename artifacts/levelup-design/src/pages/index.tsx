@@ -6,7 +6,6 @@ import { ForWhom } from "@/components/sections/ForWhom";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Hero } from "@/components/sections/Hero";
 import { Founder } from "@/components/sections/Founder";
-import { LifestyleBand } from "@/components/sections/LifestyleBand";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
@@ -46,7 +45,6 @@ export default function IndexPage() {
           <div className="relative z-10">
             <Hero />
             <Founder />
-            <LifestyleBand />
             <HowIWork />
           </div>
         </section>
