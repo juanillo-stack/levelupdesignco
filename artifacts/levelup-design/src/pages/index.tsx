@@ -12,7 +12,7 @@ import { SEO } from "@/components/SEO";
 import { site } from "@/lib/site";
 
 const heroBackground =
-  "https://images.unsplash.com/photo-1604328691852-6b0b6e388618?auto=format&fit=crop&w=1600&q=75";
+  "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=75";
 const sectionBackground =
   "https://images.unsplash.com/photo-1618005182384-a81586365c64?auto=format&fit=crop&w=1600&q=75";
 const workspaceBackground =

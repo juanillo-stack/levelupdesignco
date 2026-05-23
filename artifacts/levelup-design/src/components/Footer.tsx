@@ -129,7 +129,7 @@ export function Footer() {
             </div>
           </FooterColumn>
 
-          <FooterColumn label="Aviso legal">
+          <FooterColumn label="Legal">
             <div className="flex flex-col gap-2">
               <FooterRow to="/aviso-legal">Aviso legal</FooterRow>
               <FooterRow to="/privacidad">Política de privacidad</FooterRow>
