@@ -73,6 +73,10 @@ function getBasePath(target) {
   }
 
   if (target === "github-pages") {
+    if (process.env.GITHUB_PAGES_CUSTOM_DOMAIN) {
+      return "/";
+    }
+
     if (process.env.GITHUB_PAGES_BASE_PATH) {
       return normalizeBasePath(process.env.GITHUB_PAGES_BASE_PATH);
     }
@@ -251,6 +255,12 @@ async function main() {
     path.join(rootDistDir, "404.html"),
   );
   await writeFile(path.join(rootDistDir, ".nojekyll"), "");
+
+  const customDomain = process.env.GITHUB_PAGES_CUSTOM_DOMAIN?.trim();
+  if (customDomain) {
+    await writeFile(path.join(rootDistDir, "CNAME"), `${customDomain}\n`);
+    console.log(`Custom domain CNAME written: ${customDomain}`);
+  }
 
   console.log(
     `Static output written to ${path.relative(workspaceRoot, rootDistDir)}`,

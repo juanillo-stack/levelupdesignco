@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "BASE_PATH=${BASE_PATH:-/} PORT=${PORT:-8080} pnpm --filter @workspace/levelup-design run dev",
     "build": "node ./scripts/build-static-site.mjs",
-    "build:pages": "DEPLOY_TARGET=github-pages node ./scripts/build-static-site.mjs",
-    "build:vercel": "DEPLOY_TARGET=vercel node ./scripts/build-static-site.mjs"
+    "build:pages": "node ./scripts/build-github-pages.mjs",
+    "build:vercel": "DEPLOY_TARGET=vercel node ./scripts/build-static-site.mjs",
+    "deploy": "node ./scripts/deploy-github-pages.mjs"
   },
   "private": true,
   "devDependencies": {

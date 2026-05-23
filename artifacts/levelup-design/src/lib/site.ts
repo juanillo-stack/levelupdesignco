@@ -8,7 +8,7 @@ export const site = {
   email: "juanleiva@levelupdesign.es",
   phoneDisplay: "606 899 991",
   phoneHref: "+34606899991",
-  url: (import.meta.env.VITE_SITE_URL ?? "https://levelupdesign.com").replace(
+  url: (import.meta.env.VITE_SITE_URL ?? "https://levelupsolutions.es").replace(
     /\/$/,
     "",
   ),

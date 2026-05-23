@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://levelupdesign.com/sitemap.xml
+Sitemap: https://levelupsolutions.es/sitemap.xml

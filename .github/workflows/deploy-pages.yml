@@ -39,7 +39,9 @@ jobs:
       - name: Build for GitHub Pages
         env:
           DEPLOY_TARGET: github-pages
-          VITE_SITE_URL: https://levelupdesign.github.io/levelupdesignco
+          VITE_SITE_URL: https://levelupsolutions.es
+          BASE_PATH: /
+          GITHUB_PAGES_CUSTOM_DOMAIN: levelupsolutions.es
         run: node ./scripts/build-static-site.mjs
 
       - name: Publish to gh-pages branch
@@ -49,3 +51,4 @@ jobs:
           publish_dir: ./dist
           publish_branch: gh-pages
           force_orphan: true
+          cname: levelupsolutions.es
