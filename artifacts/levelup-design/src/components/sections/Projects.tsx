@@ -1,50 +1,5 @@
 import { ProjectCard } from "@/components/ProjectCard";
-import homeCarlosScalera from "@/assets/home-carlos-scalera.png";
-import homeJudith from "@/assets/home-judith.png";
-import homeLevelupInteriores from "@/assets/home-levelupinteriores.png";
-
-interface Project {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  imageAlt: string;
-  link: string;
-  tags?: string[];
-}
-
-const PROJECTS: Project[] = [
-  {
-    id: "carlos-scalera",
-    title: "Carlos Scalera",
-    description:
-      "Saxofonista profesional para bodas y eventos. Web elegante con estética premium para reservas y presencia digital.",
-    image: homeCarlosScalera,
-    imageAlt: "Vista previa del sitio web de Carlos Scalera, saxofonista",
-    link: "https://carlos-scalera-fullstack.vercel.app",
-    tags: ["Web profesional", "Música", "Eventos"],
-  },
-  {
-    id: "judith",
-    title: "Judith",
-    description:
-      "Detalles personalizados y decoración de eventos en Málaga. Web cálida orientada a captar clientes y presupuestos.",
-    image: homeJudith,
-    imageAlt: "Vista previa del sitio web de Judith, detalles y eventos en Málaga",
-    link: "https://judith-fullstack.vercel.app",
-    tags: ["Web profesional", "Eventos", "Málaga"],
-  },
-  {
-    id: "levelup-interiores",
-    title: "LevelUp Interiores",
-    description:
-      "Empresa especializada en reformas de cocinas, baños y reformas integrales en Málaga.",
-    image: homeLevelupInteriores,
-    imageAlt: "Vista previa del proyecto web LevelUp Interiores",
-    link: "https://levelup-interiores-fullstack.vercel.app",
-    tags: ["Web profesional", "Diseño", "Málaga"],
-  },
-];
+import { PROJECTS } from "@/lib/projects";
 
 function ProjectsBackdrop() {
   return (
@@ -121,31 +76,24 @@ export function Projects() {
       <ProjectsBackdrop />
 
       <div className="relative z-10 mx-auto max-w-6xl px-5 py-16 md:py-24">
-        <div className="max-w-3xl mb-14">
+        <div className="mb-14 max-w-3xl">
           <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand">
-            Nuestros trabajos
+            Mis proyectos
           </div>
 
-          <h2 className="mt-2 font-serif text-4xl md:text-5xl text-white">
-            Proyectos destacados
+          <h2 className="mt-2 font-serif text-4xl text-white md:text-5xl">
+            Clientes destacados
           </h2>
 
-          <p className="mt-4 text-base md:text-lg text-white/70 leading-relaxed">
-            Diseño, desarrollo y optimización digital de proyectos reales que
-            generan resultados.
+          <p className="mt-4 text-base leading-relaxed text-white/70 md:text-lg">
+            Proyectos reales con diseño, desarrollo y optimización. Haz clic en
+            una tarjeta para visitar la web en vivo.
           </p>
         </div>
 
-        <div className="grid gap-8 md:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
           {PROJECTS.map((project) => (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              imageAlt={project.imageAlt}
-              link={project.link}
-            />
+            <ProjectCard key={project.id} project={project} />
           ))}
         </div>
       </div>

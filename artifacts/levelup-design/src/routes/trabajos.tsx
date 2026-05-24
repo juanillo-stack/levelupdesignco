@@ -9,20 +9,20 @@ const WHATSAPP = "https://wa.me/34606899991";
 export const Route = createFileRoute("/trabajos")({
   head: () => ({
     meta: [
-      { title: "Nuestros trabajos — LevelUp Design Co." },
+      { title: "Trabajos de diseño web y branding | LevelUp Design Co." },
       {
         name: "description",
         content:
-          "Proyectos reales: web profesional, diseño y optimización digital. LevelUp Interiores en Málaga.",
+          "Proyectos reales de LevelUp Design Co.: Judith Almansa (eventos en Málaga) y LevelUp Interiores (reformas). Diseño web profesional y presencia digital premium.",
       },
       {
         property: "og:title",
-        content: "Nuestros trabajos — LevelUp Design Co.",
+        content: "Trabajos de diseño web y branding | LevelUp Design Co.",
       },
       {
         property: "og:description",
         content:
-          "Proyectos reales de desarrollo web y presencia digital premium.",
+          "Proyectos reales de LevelUp Design Co.: Judith Almansa (eventos en Málaga) y LevelUp Interiores (reformas). Diseño web profesional y presencia digital premium.",
       },
     ],
   }),

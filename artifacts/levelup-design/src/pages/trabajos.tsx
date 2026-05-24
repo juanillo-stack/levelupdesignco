@@ -11,7 +11,7 @@ export default function TrabajosPage() {
     <div id="top" className="min-h-screen bg-slate-950">
       <SEO
         title="Trabajos de diseño web y branding | LevelUp Design Co."
-        description="Proyectos reales de LevelUp Design Co.: Carlos Scalera, Judith y LevelUp Interiores. Diseño web profesional y presencia digital premium."
+        description="Proyectos reales de LevelUp Design Co.: Judith Almansa (eventos en Málaga) y LevelUp Interiores (reformas). Diseño web profesional y presencia digital premium."
         path="/trabajos"
       />
       <Header />

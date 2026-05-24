@@ -19,23 +19,35 @@ const WHATSAPP = "https://wa.me/34606899991";
 
 const PROJECTS = [
   {
+    id: "judith",
+    title: "Judith Almansa",
+    subtitle: "Organizadora de eventos",
+    description:
+      "Web para cestas personalizadas y decoración de eventos en Málaga.",
+    link: "https://cestasyeventosjudith.vercel.app",
+    tags: ["Eventos", "Málaga"],
+  },
+  {
     id: "levelup-interiores",
     title: "LevelUp Interiores",
+    subtitle: "Empresa de reformas",
     description:
-      "Empresa especializada en reformas de cocinas, baños y reformas integrales en Málaga.",
-    link: "https://levelup-interiores-fullstack.vercel.app",
-    tags: ["Web profesional", "Diseño", "Málaga"],
+      "Reformas de cocinas, baños y reformas integrales en Málaga.",
+    link: "https://levelupinteriores.es",
+    tags: ["Reformas", "Málaga"],
   },
 ];
 
 function ProjectCard({
   title,
+  subtitle,
   description,
   link,
   tags,
   index,
 }: {
   title: string;
+  subtitle: string;
   description: string;
   link: string;
   tags: string[];
@@ -62,6 +74,9 @@ function ProjectCard({
       </View>
 
       <View style={styles.cardBody}>
+        <Text style={[styles.cardSubtitle, { color: colors.brand }]}>
+          {subtitle}
+        </Text>
         <Text style={[styles.cardTitle, { color: colors.foreground }]}>
           {title}
         </Text>
@@ -204,6 +219,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   cardBody: { padding: 18, gap: 10 },
+  cardSubtitle: {
+    fontSize: 11,
+    fontWeight: "600",
+    letterSpacing: 1.2,
+    textTransform: "uppercase",
+    marginBottom: 4,
+  },
   cardTitle: { fontSize: 18, fontWeight: "700" },
   cardDesc: { fontSize: 13, lineHeight: 20 },
   tags: { flexDirection: "row", flexWrap: "wrap", gap: 6 },
