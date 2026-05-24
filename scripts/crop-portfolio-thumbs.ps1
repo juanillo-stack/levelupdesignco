@@ -1,4 +1,4 @@
-# Genera miniaturas 1600x1000 (16:10) para tarjetas de portfolio
+# Miniaturas 1600x1000 (16:10) — crops específicos para tarjetas de portfolio
 Add-Type -AssemblyName System.Drawing
 
 $ErrorActionPreference = "Stop"
@@ -14,6 +14,10 @@ function Export-CardThumb {
         [double]$FocusX = 0.5,
         [double]$FocusY = 0.5
     )
+
+    if (-not (Test-Path $SourcePath)) {
+        throw "No existe la imagen fuente: $SourcePath"
+    }
 
     $src = [System.Drawing.Image]::FromFile($SourcePath)
     try {
@@ -58,8 +62,12 @@ function Export-CardThumb {
 
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
 
-$judithSrc = "C:\Desarrollo\Ingenieria\Clientes\cestasyeventosjudith\src\assets\hero-cestas.jpg"
-$interSrc = "C:\Desarrollo\Ingenieria\Clientes\levelupinteriores\frontend\src\assets\hero.jpg"
+$clients = "C:\Desarrollo\Ingenieria\Clientes"
+$judithHero = Join-Path $clients "cestasyeventosjudith\src\assets\hero-cestas.jpg"
+$interHero = Join-Path $clients "levelupinteriores\frontend\src\assets\hero.jpg"
 
-Export-CardThumb -SourcePath $judithSrc -DestPath (Join-Path $outDir "judith.jpg") -FocusX 0.5 -FocusY 0.45
-Export-CardThumb -SourcePath $interSrc -DestPath (Join-Path $outDir "levelup-interiores.jpg") -FocusX 0.62 -FocusY 0.5
+# Judith: composición de producto premium (sin recortes de rostro)
+Export-CardThumb -SourcePath $judithHero -DestPath (Join-Path $outDir "judith.jpg") -FocusX 0.5 -FocusY 0.42
+
+# Interiores: zona cocina/comedor del hero
+Export-CardThumb -SourcePath $interHero -DestPath (Join-Path $outDir "levelup-interiores.jpg") -FocusX 0.58 -FocusY 0.48
