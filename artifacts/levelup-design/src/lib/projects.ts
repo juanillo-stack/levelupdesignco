@@ -7,12 +7,13 @@ export interface Project {
   subtitle: string;
   description: string;
   image: string;
-  /** Clases Tailwind para el punto focal del recorte (object-cover) */
-  imagePosition: string;
   imageAlt: string;
   link: string;
   tags: string[];
 }
+
+/** URL activa de Judith en Vercel (evitar judith-web.vercel.app — 404). */
+export const JUDITH_PROJECT_URL = "https://cestasyeventosjudith.vercel.app";
 
 export const PROJECTS: Project[] = [
   {
@@ -22,10 +23,9 @@ export const PROJECTS: Project[] = [
     description:
       "Web cálida para cestas personalizadas y decoración de eventos en Málaga, orientada a captar clientes y presupuestos.",
     image: thumbJudith,
-    imagePosition: "object-[center_42%]",
     imageAlt:
-      "Detalle de cesta personalizada de la web de Judith Almansa, organizadora de eventos en Málaga",
-    link: "https://cestasyeventosjudith.vercel.app",
+      "Miniatura del proyecto web de Judith Almansa, organizadora de eventos en Málaga",
+    link: JUDITH_PROJECT_URL,
     tags: ["Web profesional", "Eventos", "Málaga"],
   },
   {
@@ -35,9 +35,8 @@ export const PROJECTS: Project[] = [
     description:
       "Web de confianza para reformas de cocinas, baños e integrales en Málaga, con foco en presupuestos y contacto directo.",
     image: thumbLevelupInteriores,
-    imagePosition: "object-[58%_center]",
     imageAlt:
-      "Interior de cocina reformada en la web de LevelUp Interiores, empresa de reformas en Málaga",
+      "Miniatura del proyecto web LevelUp Interiores, empresa de reformas en Málaga",
     link: "https://levelupinteriores.es",
     tags: ["Reformas", "Málaga", "Proyecto propio"],
   },

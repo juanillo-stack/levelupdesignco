@@ -1,5 +1,4 @@
 import { ArrowUpRight } from "lucide-react";
-import { cn } from "@/lib/utils";
 import type { Project } from "@/lib/projects";
 
 interface ProjectCardProps {
@@ -7,44 +6,38 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const {
-    title,
-    subtitle,
-    description,
-    image,
-    imagePosition,
-    imageAlt,
-    link,
-  } = project;
+  const { title, subtitle, description, image, imageAlt, link } = project;
 
   return (
     <a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={`Ver proyecto: ${title}`}
       className="group relative flex h-full w-full cursor-pointer flex-col overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.07] to-white/[0.02] text-left backdrop-blur-sm transition-[transform,box-shadow,border-color] duration-500 ease-out hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_24px_48px_rgba(123,30,43,0.2),0_0_0_1px_rgba(123,30,43,0.06)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/60"
     >
-      <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0c0a0b]">
+      <div className="relative aspect-[16/10] w-full shrink-0 overflow-hidden bg-[#0c0a0b]">
         <img
           src={image}
           alt={imageAlt}
+          width={1600}
+          height={1000}
           loading="lazy"
           decoding="async"
-          className={cn(
-            "h-full w-full scale-[1.02] object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]",
-            imagePosition,
-          )}
+          className="h-full w-full object-cover object-center transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform group-hover:scale-[1.04]"
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/25 to-slate-950/5"
+          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/15 to-transparent"
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(123,30,43,0.12),transparent_55%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(123,30,43,0.14),transparent_55%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         />
-
-        <div className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-slate-950/50 text-white/90 opacity-0 backdrop-blur-md transition-all duration-500 group-hover:opacity-100">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-slate-950/55 text-white opacity-0 backdrop-blur-md transition-all duration-500 group-hover:opacity-100"
+        >
           <ArrowUpRight className="h-4 w-4" />
         </div>
       </div>
