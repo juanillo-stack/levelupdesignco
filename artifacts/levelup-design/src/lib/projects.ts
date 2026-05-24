@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
     description:
       "Web cálida para cestas personalizadas y decoración de eventos en Málaga, orientada a captar clientes y presupuestos.",
     image: thumbJudith,
-    imagePosition: "50% 45%",
+    imagePosition: "52% 28%",
     imageAlt:
       "Miniatura del proyecto web de Judith Almansa, organizadora de eventos en Málaga",
     link: JUDITH_PROJECT_URL,
@@ -45,7 +45,7 @@ export const PROJECTS: Project[] = [
     description:
       "Web de confianza para reformas de cocinas, baños e integrales en Málaga, con foco en presupuestos y contacto directo.",
     image: thumbLevelupInteriores,
-    imagePosition: "58% 48%",
+    imagePosition: "55% 40%",
     imageAlt:
       "Miniatura del proyecto web LevelUp Interiores, empresa de reformas en Málaga",
     link: "https://levelupinteriores.es",

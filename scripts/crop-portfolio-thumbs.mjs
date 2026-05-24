@@ -21,10 +21,10 @@ const crops = [
     id: "judith",
     source: path.resolve(
       root,
-      "../cestasyeventosjudith/src/assets/hero-cestas.jpg",
+      "../cestasyeventosjudith/src/assets/judith.jpg",
     ),
-    focusX: 0.5,
-    focusY: 0.45,
+    focusX: 0.52,
+    focusY: 0.32,
   },
   {
     id: "levelup-interiores",
@@ -32,8 +32,8 @@ const crops = [
       root,
       "../levelupinteriores/frontend/src/assets/hero.jpg",
     ),
-    focusX: 0.62,
-    focusY: 0.5,
+    focusX: 0.55,
+    focusY: 0.42,
   },
 ];
 
