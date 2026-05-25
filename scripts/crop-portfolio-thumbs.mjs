@@ -18,6 +18,15 @@ const TARGET_H = 1000;
 
 const crops = [
   {
+    id: "carlos-scalera",
+    source: path.resolve(
+      root,
+      "../carloscalerasax/src/assets/photos/hero-cinematic.jpg",
+    ),
+    focusX: 0.5,
+    focusY: 0.38,
+  },
+  {
     id: "judith",
     source: path.resolve(
       root,

@@ -63,8 +63,12 @@ function Export-CardThumb {
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
 
 $clients = "C:\Desarrollo\Ingenieria\Clientes"
+$carlosHero = Join-Path $clients "carloscalerasax\src\assets\photos\hero-cinematic.jpg"
 $judithPortrait = Join-Path $clients "cestasyeventosjudith\src\assets\judith.jpg"
 $interHero = Join-Path $clients "levelupinteriores\frontend\src\assets\hero.jpg"
+
+# Carlos: hero cinematográfico negro/dorado
+Export-CardThumb -SourcePath $carlosHero -DestPath (Join-Path $outDir "carlos-scalera.jpg") -FocusX 0.5 -FocusY 0.38
 
 # Judith: retrato con rostro y detalle visible (crop 16:10 premium)
 Export-CardThumb -SourcePath $judithPortrait -DestPath (Join-Path $outDir "judith.jpg") -FocusX 0.52 -FocusY 0.32

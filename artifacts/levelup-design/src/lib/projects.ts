@@ -1,3 +1,4 @@
+import thumbCarlos from "@/assets/portfolio/carlos-scalera.jpg";
 import thumbJudith from "@/assets/portfolio/judith.jpg";
 import thumbLevelupInteriores from "@/assets/portfolio/levelup-interiores.jpg";
 
@@ -14,10 +15,11 @@ export interface Project {
   tags: string[];
 }
 
+export const CARLOS_SCALERA_PROJECT_URL = "https://carloscalerasax.vercel.app";
 export const JUDITH_PROJECT_URL = "https://cestasyeventosjudith.vercel.app";
 
 const SEO_DESCRIPTION =
-  "Proyectos reales de LevelUp Design Co.: Judith Almansa y LevelUp Interiores. Diseño web profesional y presencia digital premium.";
+  "Proyectos reales de LevelUp Design Co.: Carlos Scalera, Judith Almansa y LevelUp Interiores. Diseño web profesional y presencia digital premium.";
 
 export const TRABAJOS_SEO = {
   title: "Trabajos de diseño web y branding | LevelUp Design Co.",
@@ -25,6 +27,19 @@ export const TRABAJOS_SEO = {
 } as const;
 
 export const PROJECTS: Project[] = [
+  {
+    id: "carlos-scalera",
+    title: "Carlos Scalera",
+    subtitle: "Web premium para saxofonista de eventos",
+    description:
+      "Sitio luxury negro y dorado para saxofón en eventos premium. React, Vite, SSR y despliegue en Vercel.",
+    image: thumbCarlos,
+    imagePosition: "50% 38%",
+    imageAlt:
+      "Miniatura del proyecto web de Carlos Scalera, saxofonista profesional para eventos premium",
+    link: CARLOS_SCALERA_PROJECT_URL,
+    tags: ["React", "Vite", "SSR", "Vercel"],
+  },
   {
     id: "judith",
     title: "Judith Almansa",
