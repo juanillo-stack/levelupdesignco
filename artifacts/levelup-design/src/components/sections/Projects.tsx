@@ -75,23 +75,24 @@ export function Projects() {
     <section id="proyectos" className="relative w-full overflow-hidden">
       <ProjectsBackdrop />
 
-      <div className="relative z-10 mx-auto max-w-6xl px-5 py-16 md:py-24">
-        <div className="mb-14 max-w-3xl">
+      <div className="relative z-10 mx-auto max-w-6xl px-5 py-12 md:py-16">
+        <div className="mb-8 max-w-3xl md:mb-10">
           <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand">
-            Mis proyectos
+            Portfolio
           </div>
 
-          <h2 className="mt-2 font-serif text-4xl text-white md:text-5xl">
-            Clientes destacados
+          <h2 className="mt-2 font-serif text-3xl text-white md:text-4xl">
+            Nuestros proyectos
           </h2>
 
-          <p className="mt-4 text-base leading-relaxed text-white/70 md:text-lg">
-            Proyectos reales con diseño, desarrollo y optimización. Haz clic en
-            una tarjeta para visitar la web en vivo.
+          <p className="mt-3 text-sm leading-relaxed text-white/70 md:text-base">
+            Proyectos reales de clientes con presencia online, branding y
+            captación de contactos. Haz clic en una tarjeta para visitar la web
+            en vivo.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-6">
           {PROJECTS.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

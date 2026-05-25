@@ -33,15 +33,15 @@ export const whatsappLinks = {
 export const socialLinks = [
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/company/levelupdesignco",
+    href: "https://www.linkedin.com/in/levelupdesign/",
   },
   {
     label: "Instagram",
-    href: "https://instagram.com/juanleiva.levelupdesign",
+    href: "https://www.instagram.com/levelupdesign.co/",
   },
   {
     label: "Facebook",
-    href: "https://www.facebook.com/LevelUpDesignCo",
+    href: "https://www.facebook.com/levelupdesign.co",
   },
 ];
 
