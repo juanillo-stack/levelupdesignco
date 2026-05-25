@@ -39,7 +39,7 @@ export function HowIWork() {
         <div className="mb-8 flex flex-col gap-4 sm:mb-10 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
           <p className="max-w-xl font-serif text-2xl leading-snug tracking-tight text-white sm:text-3xl md:text-[2.15rem]">
             Construyendo marcas con{" "}
-            <span className="italic text-brand">identidad propia</span>.
+            <span className="italic text-white">identidad propia</span>
           </p>
 
           <Link

@@ -13,7 +13,7 @@ export function LifestyleBand() {
       <div className="relative z-10 mx-auto flex min-h-[inherit] max-w-6xl items-center px-5 py-14 md:py-16">
         <ScrollReveal>
           <p className="max-w-xl font-serif text-2xl sm:text-3xl md:text-[2.15rem] leading-snug text-white tracking-tight">
-            Construyendo marcas con <span className="italic text-brand">identidad propia</span>.
+            Construyendo marcas con <span className="italic text-white">identidad propia</span>
           </p>
         </ScrollReveal>
       </div>

@@ -109,8 +109,8 @@ export function Footer() {
 
           <FooterColumn label="Contacto">
             <div className="flex flex-col gap-2">
-              <FooterRow icon={Phone} href={`tel:${site.phoneHref}`}>
-                {site.phoneDisplay}
+              <FooterRow icon={Phone} href={site.whatsappUrl} external>
+                {site.whatsappLabel}
               </FooterRow>
               <FooterRow icon={Mail} href={`mailto:${site.email}`}>
                 {site.email}

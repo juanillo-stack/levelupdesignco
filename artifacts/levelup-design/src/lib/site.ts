@@ -5,9 +5,11 @@ export const site = {
   vat: "[NIF/CIF pendiente de completar]",
   fiscalAddress: "[Dirección fiscal pendiente de completar]",
   location: "Málaga, España",
-  email: "juanleiva@levelupdesign.es",
+  email: "design@levelupsolutions.es",
   phoneDisplay: "606 899 991",
   phoneHref: "+34606899991",
+  whatsappUrl: "https://wa.me/34606899991",
+  whatsappLabel: "WhatsApp",
   url: (import.meta.env.VITE_SITE_URL ?? "https://levelupsolutions.es").replace(
     /\/$/,
     "",
